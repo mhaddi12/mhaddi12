@@ -5,7 +5,7 @@ I'm a passionate **Flutter Developer** with over 1 year of experience, currently
 I specialize in:
 - 📱 **Flutter** (1 year+ experience)
 - ☁️ **Firebase**
-- ⚙️ **State Management** (GetX, Provider)
+- ⚙️ **State Management** (GetX, Provider,bloc)
 - 🌍 **API Integration** (REST, GraphQL)
 - 💾 **Hive, SharedPreferences**
 
