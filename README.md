@@ -21,11 +21,8 @@ I'm a passionate **Flutter Developer** with over 1 year of experience, currently
 - **Baccarat Predictor Game**  
   A strategic game to predict Baccarat outcomes.
 
-- **Driver Dashboard App**  
-  A driver management system for trips and schedules.
-
-- **Chat Application**  
-  A Firebase-powered chat app with one-to-many relationships.
+- **BigWay School**  
+  This is consist of Two Mobile Application Driver and Parents Application.
 
 - **Blog API**  
   A **Node.js with Express** project to manage blog posts, including features for creating, editing, deleting, and fetching blog posts from a database. This API also supports user authentication, allowing users to manage their blog content securely.
