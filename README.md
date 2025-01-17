@@ -1,12 +1,12 @@
 # 👋 Hi, I'm Muhammad Haddi!
 
-I'm a passionate **Flutter Developer** with over 1 year of experience, currently working at **BitLogicx**. My journey started after completing my **BSSE** from **Superior University Gold Campus**, where I interned as a Flutter developer. I love building mobile apps with clean UI, smooth user experiences, and high-performance features. Recently, I’ve also been expanding my backend expertise with **Node.js and Express** to create full-stack solutions.
+I'm a passionate **Flutter Developer** with over 2 years of experience, currently working at **BitLogicx**. My journey started after completing my **BSSE** from **Superior University Gold Campus**, where I interned as a Flutter developer. I love building mobile apps with clean UI, smooth user experiences, and high-performance features. Recently, I’ve also been expanding my backend expertise with **Node.js and Express** to create full-stack solutions.
 
 ---
 
 ## 🛠️ Technical Skills
 
-- 📱 **Flutter Development** (1 year+ experience)  
+- 📱 **Flutter Development** (2 years experience)  
 - ☁️ **Firebase Suite**: Authentication, Firestore, Realtime Database  
 - ⚙️ **State Management**: GetX, Provider, Bloc  
 - 🌐 **API Integration**: RESTful APIs, GraphQL  
