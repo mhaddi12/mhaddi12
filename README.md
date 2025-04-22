@@ -8,7 +8,7 @@ I'm a passionate **Flutter Developer** with over 2 years of experience, currentl
 
 - 📱 **Flutter Development** (2 years experience)  
 - ☁️ **Firebase Suite**: Authentication, Firestore, Realtime Database  
-- ⚙️ **State Management**: GetX, Provider, Bloc  
+- ⚙️ **State Management**: GetX, Provider, riverpod  
 - 🌐 **API Integration**: RESTful APIs, GraphQL  
 - 💾 **Local Storage**: Hive, SharedPreferences  
 - 🖥️ **Node.js with Express**: Building RESTful APIs, CRUD operations, and middleware  
