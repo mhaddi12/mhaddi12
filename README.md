@@ -39,17 +39,8 @@ I'm a passionate **Flutter Developer** with over 2 years of experience, currentl
 
 ## 👨‍💻 Current Projects
 
-- **Baccarat Predictor Game**  
-  A strategic game to predict Baccarat outcomes.
+- **Optima CRM
 
-- **BigWay School**  
-  This consists of two mobile applications: **Driver** and **Parents** apps.
-
-- **Blog API**  
-  A **Node.js with Express** project to manage blog posts, with full CRUD operations and user authentication.
-
-- **Task Management App**  
-  A **Node.js with Express** and **MongoDB** app to manage tasks and teams with real-time status tracking.
 
 ---
 
