@@ -56,5 +56,12 @@ I'm a passionate **Flutter Developer** with over 2 years of experience, currentl
 - **Email**: [se.haddi1@gmail.com](mailto:se.haddi1@gmail.com)
 
 ---
+<h2 align="center">💡 Quote</h2>
+
+<p align="center">
+  <em>"If you know code you can change the world."</em><br>
+  — <strong>Haddi</strong>
+</p>
+
 
 > *"Striving for innovation, I aim to solve real-world challenges through technology and leave a meaningful impact with every project I touch."*
