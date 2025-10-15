@@ -1,24 +1,27 @@
 # 👋 Hi, I'm Muhammad Haddi!
 
-I'm a passionate **Flutter Developer** with over 2 years of experience, currently working at **OptimaGeeks**. My journey started after completing my **BSSE** from **Superior University Gold Campus**, where I interned as a Flutter developer. I love building mobile apps with clean UI, smooth user experiences, and high-performance features. Recently, I’ve also been expanding my backend expertise with **Node.js and Express** to create full-stack solutions.
+I'm a passionate **Flutter Developer** with over **2 years of experience**, currently working at **OptimaGeeks**.  
+I build mobile apps with **clean UI**, **smooth UX**, and **high-performance features**.  
+My journey began after completing my **BSSE** from **Superior University Gold Campus**, followed by an internship in Flutter development.  
+Recently, I’ve been expanding into backend development with **Node.js** and **Express**, crafting full-stack solutions.
 
 ---
 
 ## 🛠️ Technical Skills
 
-- 📱 **Flutter Development** (2 years experience)  
-- ☁️ **Firebase Suite**: Authentication, Firestore, Realtime Database  
-- ⚙️ **State Management**: GetX, Provider, Riverpod  
-- 🌐 **API Integration**: RESTful APIs, GraphQL  
-- 💾 **Local Storage**: Hive, SharedPreferences  
-- 🖥️ **Node.js with Express**: Building RESTful APIs, CRUD operations, and middleware  
-- 🔒 **Clean Architecture & Best Practices**
+- 📱 **Flutter Development** (2+ years)
+- ☁️ **Firebase Suite** — Authentication, Firestore, Realtime Database  
+- ⚙️ **State Management** — GetX, Provider, Riverpod  
+- 🌐 **API Integration** — RESTful APIs, GraphQL  
+- 💾 **Local Storage** — Hive, SharedPreferences  
+- 🖥️ **Backend** — Node.js, Express.js (REST APIs, CRUD, middleware)
+- 🔒 **Clean Architecture** & **Best Practices**
 
 ---
 
 ## 💻 Languages & Tools
 
-<p align="left">
+<p align="center">
   <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"/>
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/>
   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"/>
@@ -29,33 +32,33 @@ I'm a passionate **Flutter Developer** with over 2 years of experience, currentl
   <img src="https://img.shields.io/badge/REST%20API-005571?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Android%20Studio-181717?style=for-the-badge&logo=android-studio&logoColor=white"/>
-
-  
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white"/>
 </p>
 
 ---
 
 ## 👨‍💻 Current Projects
 
-- **Optima CRM**
-
+- **Optima CRM** — A robust CRM platform designed for high performance and usability.
 
 ---
 
 ## 📈 GitHub at a Glance
 
-![Muhammad Haddi's GitHub Stats](https://github-readme-stats.vercel.app/api?username=mhaddi12&show_icons=true&theme=radical)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=mhaddi12&show_icons=true&theme=radical" alt="GitHub Stats" />
+</p>
 
 ---
 
-## 📫 Let's Connect!
+## 📫 Let's Connect
 
-- **LinkedIn**: [linkedin.com/in/muhammad-haddi](https://www.linkedin.com/in/muhammad-haddi)  
-- **Email**: [se.haddi1@gmail.com](mailto:se.haddi1@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/muhammad-haddi)  
+- ✉️ [se.haddi1@gmail.com](mailto:se.haddi1@gmail.com)
 
 ---
+
 <h2 align="center">💡 Quote</h2>
 
 <p align="center">
@@ -63,5 +66,6 @@ I'm a passionate **Flutter Developer** with over 2 years of experience, currentl
   — <strong>Haddi</strong>
 </p>
 
-
-> *"Striving for innovation, I aim to solve real-world challenges through technology and leave a meaningful impact with every project I touch."*
+<p align="center">
+  <em>“Striving for innovation, I aim to solve real-world challenges through technology and leave a meaningful impact with every project I touch.”</em>
+</p>
