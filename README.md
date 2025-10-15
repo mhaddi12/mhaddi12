@@ -1,61 +1,76 @@
-# 👋 Hi, I'm Muhammad Haddi!
+<!-- Profile Header -->
+<h1 align="center">👋 Hi, I'm <span style="color:#00C6FF;">Muhammad Haddi</span></h1>
+<h3 align="center">💙 Flutter Developer | Full-Stack Learner | Tech Enthusiast</h3>
 
-I'm a passionate **Flutter Developer** with over **2 years of experience**, currently working at **OptimaGeeks**.  
-I build mobile apps with **clean UI**, **smooth UX**, and **high-performance features**.  
-My journey began after completing my **BSSE** from **Superior University Gold Campus**, followed by an internship in Flutter development.  
-Recently, I’ve been expanding into backend development with **Node.js** and **Express**, crafting full-stack solutions.
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=mhaddi12&style=flat-square&color=00C6FF" alt="Profile views"/>
+</p>
+
+---
+
+## 🧠 About Me
+
+I'm a passionate **Flutter Developer** with over **2 years of experience**, currently crafting elegant, high-performance apps at **OptimaGeeks**.  
+My journey began at **Superior University Gold Campus** where I completed my **BSSE** and interned as a Flutter developer.  
+
+I specialize in **beautiful UI**, **smooth UX**, and **robust architecture**, and I’ve recently ventured into backend development with **Node.js** and **Express** to build full-stack solutions.
 
 ---
 
 ## 🛠️ Technical Skills
 
-- 📱 **Flutter Development** (2+ years)
-- ☁️ **Firebase Suite** — Authentication, Firestore, Realtime Database  
-- ⚙️ **State Management** — GetX, Provider, Riverpod  
-- 🌐 **API Integration** — RESTful APIs, GraphQL  
-- 💾 **Local Storage** — Hive, SharedPreferences  
-- 🖥️ **Backend** — Node.js, Express.js (REST APIs, CRUD, middleware)
-- 🔒 **Clean Architecture** & **Best Practices**
+| Domain | Technologies |
+|:--|:--|
+| **Mobile Development** | Flutter, Dart |
+| **Backend Development** | Node.js, Express.js |
+| **Databases** | Firebase (Auth, Firestore, RTDB), MongoDB |
+| **State Management** | Riverpod, GetX, Provider |
+| **API Integration** | RESTful APIs, GraphQL |
+| **Storage** | Hive, SharedPreferences |
+| **Version Control & Tools** | Git, GitHub, VS Code, Android Studio |
 
 ---
 
-## 💻 Languages & Tools
+## 💻 Tech Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
-  <img src="https://img.shields.io/badge/REST%20API-005571?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=dart,flutter,firebase,js,nodejs,express,mongodb,git,github,vscode,androidstudio" />
 </p>
 
 ---
 
-## 👨‍💻 Current Projects
+## 🚀 Current Projects
 
-- **Optima CRM** — A robust CRM platform designed for high performance and usability.
+🧩 **Optima CRM** — Building a modern, efficient CRM platform that enhances productivity and performance.
 
 ---
 
-## 📈 GitHub at a Glance
+## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mhaddi12&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=mhaddi12&show_icons=true&theme=tokyonight" alt="GitHub Stats" height="150"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mhaddi12&theme=tokyonight" alt="GitHub Streak" height="150"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mhaddi12&layout=compact&theme=tokyonight" height="150" />
 </p>
 
 ---
 
-## 📫 Let's Connect
+## 🤝 Connect With Me
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/muhammad-haddi)  
-- ✉️ [se.haddi1@gmail.com](mailto:se.haddi1@gmail.com)
+<p align="center">
+  <a href="https://www.linkedin.com/in/muhammad-haddi">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="mailto:se.haddi1@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://github.com/mhaddi12">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+</p>
 
 ---
 
@@ -67,5 +82,11 @@ Recently, I’ve been expanding into backend development with **Node.js** and **
 </p>
 
 <p align="center">
-  <em>“Striving for innovation, I aim to solve real-world challenges through technology and leave a meaningful impact with every project I touch.”</em>
+  <em>"Striving for innovation, I aim to solve real-world challenges through technology and leave a meaningful impact with every project I touch."</em>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00C6FF&height=100&section=footer"/>
 </p>
