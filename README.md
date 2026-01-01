@@ -1,6 +1,6 @@
 <!-- Profile Header -->
 <h1 align="center">👋 Hi, I'm <span style="color:#00C6FF;">Muhammad Haddi</span></h1>
-<h3 align="center">💙 Flutter Developer | Full-Stack Learner | Tech Enthusiast</h3>
+<h3 align="center">💙 Flutter Developer | Full-Stack Developer | Mobile & Web App Enthusiast</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=mhaddi12&style=flat-square&color=00C6FF" alt="Profile views"/>
@@ -10,10 +10,10 @@
 
 ## 🧠 About Me
 
-I'm a passionate **Flutter Developer** with over **2 years of experience**, currently crafting elegant, high-performance apps in the mobile and web space.  
-My journey began at **Superior University Gold Campus** where I completed my **BSSE** and interned as a Flutter developer.  
+I'm a passionate **Flutter Developer** and **Full-Stack Developer** with over **2 years of professional experience** building **mobile apps**, **web apps**, and **cross-platform solutions**.  
+I have expertise in **Flutter**, **Dart**, **Node.js**, **Express**, **Firebase**, and **MongoDB**, and I enjoy creating **beautiful UI**, **smooth UX**, and **robust application architectures**.  
 
-I specialize in **beautiful UI**, **smooth UX**, and **robust architecture**, and I’ve recently ventured into backend development with **Node.js** and **Express** to build full-stack solutions.
+My journey began at **Superior University Gold Campus**, where I completed my **BSSE** and interned as a Flutter developer, gaining real-world experience in **mobile and backend development**.
 
 ---
 
@@ -21,12 +21,11 @@ I specialize in **beautiful UI**, **smooth UX**, and **robust architecture**, an
 
 | Domain | Technologies |
 |:--|:--|
-| **Mobile Development** | Flutter, Dart |
-| **Backend Development** | Node.js, Express.js |
+| **Mobile Development** | Flutter, Dart, Cross-Platform Apps |
+| **Backend Development** | Node.js, Express.js, REST APIs, GraphQL |
 | **Databases** | Firebase (Auth, Firestore, RTDB), MongoDB |
 | **State Management** | Riverpod, GetX, Provider |
-| **API Integration** | RESTful APIs, GraphQL |
-| **Storage** | Hive, SharedPreferences |
+| **Storage & Local Databases** | Hive, SharedPreferences |
 | **Version Control & Tools** | Git, GitHub, VS Code, Android Studio |
 
 ---
@@ -41,7 +40,9 @@ I specialize in **beautiful UI**, **smooth UX**, and **robust architecture**, an
 
 ## 🚀 Current Projects
 
-🧩 **CRM & Productivity Apps** — Building modern, efficient solutions to enhance workflow, productivity, and user experience.
+🧩 **CRM & Productivity Apps** — Designing **modern Flutter apps** and **full-stack solutions** to improve **workflow, productivity, and user experience**.  
+
+I focus on **high-performance mobile apps**, **scalable backend APIs**, and **efficient cloud integration**.
 
 ---
 
@@ -82,7 +83,7 @@ I specialize in **beautiful UI**, **smooth UX**, and **robust architecture**, an
 </p>
 
 <p align="center">
-  <em>"Striving for innovation, I aim to solve real-world challenges through technology and leave a meaningful impact with every project I touch."</em>
+  <em>"Striving for innovation, I build **Flutter apps**, **Node.js backends**, and **full-stack solutions** to solve real-world problems and create a meaningful impact."</em>
 </p>
 
 ---
