@@ -10,7 +10,7 @@
 
 ## 🧠 About Me
 
-I'm a passionate **Flutter Developer** with over **2 years of experience**, currently crafting elegant, high-performance apps at **OptimaGeeks**.  
+I'm a passionate **Flutter Developer** with over **2 years of experience**, currently crafting elegant, high-performance apps in the mobile and web space.  
 My journey began at **Superior University Gold Campus** where I completed my **BSSE** and interned as a Flutter developer.  
 
 I specialize in **beautiful UI**, **smooth UX**, and **robust architecture**, and I’ve recently ventured into backend development with **Node.js** and **Express** to build full-stack solutions.
@@ -41,7 +41,7 @@ I specialize in **beautiful UI**, **smooth UX**, and **robust architecture**, an
 
 ## 🚀 Current Projects
 
-🧩 **Optima CRM** — Building a modern, efficient CRM platform that enhances productivity and performance.
+🧩 **CRM & Productivity Apps** — Building modern, efficient solutions to enhance workflow, productivity, and user experience.
 
 ---
 
