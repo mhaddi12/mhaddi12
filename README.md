@@ -24,7 +24,7 @@ My journey began at **Superior University Gold Campus**, where I completed my **
 | **Mobile Development** | Flutter, Dart, Cross-Platform Apps |
 | **Backend Development** | Node.js, Express.js, REST APIs, GraphQL |
 | **Databases** | Firebase (Auth, Firestore, RTDB), MongoDB |
-| **State Management** | Riverpod, GetX, Provider |
+| **State Management** | Riverpod, GetX, Provider, bLoC | 
 | **Storage & Local Databases** | Hive, SharedPreferences |
 | **Version Control & Tools** | Git, GitHub, VS Code, Android Studio |
 
