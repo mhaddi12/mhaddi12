@@ -1,6 +1,8 @@
 <!-- Profile Header -->
 <h1 align="center">👋 Hi, I'm <span style="color:#00C6FF;">Muhammad Haddi</span></h1>
-<h3 align="center">💙 Flutter Developer | Full-Stack Developer | Mobile & Web App Enthusiast</h3>
+<h3 align="center">💙 Software Engineer | Full-Stack Mobile Developer
+Flutter, Riverpod, Node.js, REST APIs
+Building production-ready apps and scalable backends.</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=mhaddi12&style=flat-square&color=00C6FF" alt="Profile views"/>
