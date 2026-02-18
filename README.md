@@ -1,8 +1,10 @@
 <!-- Profile Header -->
 <h1 align="center">👋 Hi, I'm <span style="color:#00C6FF;">Muhammad Haddi</span></h1>
-<h3 align="center">💙 Software Engineer | Full-Stack Mobile Developer
-Flutter, Riverpod, Node.js, REST APIs
-Building production-ready apps and scalable backends.</h3>
+<h3 align="center">
+💙 Software Engineer | Full-Stack Mobile Developer<br/>
+Flutter, Riverpod, Node.js, REST APIs<br/>
+Building production-ready apps and scalable backends
+</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=mhaddi12&style=flat-square&color=00C6FF" alt="Profile views"/>
@@ -12,10 +14,11 @@ Building production-ready apps and scalable backends.</h3>
 
 ## 🧠 About Me
 
-I'm a passionate **Flutter Developer** and **Full-Stack Developer** with over **2 years of professional experience** building **mobile apps**, **web apps**, and **cross-platform solutions**.  
-I have expertise in **Flutter**, **Dart**, **Node.js**, **Express**, **Firebase**, and **MongoDB**, and I enjoy creating **beautiful UI**, **smooth UX**, and **robust application architectures**.  
+I'm a passionate **Software Engineer** and **Full-Stack Mobile Developer** with over **2 years of professional experience** building **mobile and web applications**.
 
-My journey began at **Superior University Gold Campus**, where I completed my **BSSE** and interned as a Flutter developer, gaining real-world experience in **mobile and backend development**.
+I specialize in **Flutter**, **Dart**, **Node.js**, **Express**, **Firebase**, and **MongoDB**, focusing on clean architecture, scalable backend systems, and smooth user experiences.
+
+I completed my **BS in Software Engineering (BSSE)** from **Superior University – Gold Campus**, where I also started my journey as a Flutter intern and gained hands-on experience in both mobile and backend development.
 
 ---
 
@@ -26,9 +29,9 @@ My journey began at **Superior University Gold Campus**, where I completed my **
 | **Mobile Development** | Flutter, Dart, Cross-Platform Apps |
 | **Backend Development** | Node.js, Express.js, REST APIs, GraphQL |
 | **Databases** | Firebase (Auth, Firestore, RTDB), MongoDB |
-| **State Management** | Riverpod, GetX, Provider, bLoC | 
-| **Storage & Local Databases** | Hive, SharedPreferences |
-| **Version Control & Tools** | Git, GitHub, VS Code, Android Studio |
+| **State Management** | Riverpod, GetX, Provider, BLoC |
+| **Local Storage** | Hive, SharedPreferences |
+| **Tools & Version Control** | Git, GitHub, VS Code, Android Studio |
 
 ---
 
@@ -40,11 +43,15 @@ My journey began at **Superior University Gold Campus**, where I completed my **
 
 ---
 
-## 🚀 Current Projects
+## 🚀 Current Focus
 
-🧩 **CRM & Productivity Apps** — Designing **modern Flutter apps** and **full-stack solutions** to improve **workflow, productivity, and user experience**.  
+🧩 Building **CRM and productivity applications** using Flutter and Node.js.
 
-I focus on **high-performance mobile apps**, **scalable backend APIs**, and **efficient cloud integration**.
+I focus on:
+- High-performance mobile apps  
+- Scalable backend APIs  
+- Clean architecture  
+- Efficient cloud integration  
 
 ---
 
@@ -85,7 +92,9 @@ I focus on **high-performance mobile apps**, **scalable backend APIs**, and **ef
 </p>
 
 <p align="center">
-  <em>"Striving for innovation, I build **Flutter apps**, **Node.js backends**, and **full-stack solutions** to solve real-world problems and create a meaningful impact."</em>
+  <em>
+  I build Flutter applications and Node.js backends to solve real-world problems with scalable, production-ready solutions.
+  </em>
 </p>
 
 ---
