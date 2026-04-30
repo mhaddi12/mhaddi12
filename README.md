@@ -2,11 +2,11 @@
 <h3 align="center">Software Engineer | Full-Stack Mobile Developer</h3>
 
 <p align="center">
-Flutter • Node.js • REST APIs • Scalable Systems
+Flutter • Node.js • REST APIs • Scalable Backend Systems
 </p>
 
 <p align="center">
-Building applications that solve real business problems and improve workflow, productivity, and user experience.
+Building practical software that solves real business problems, not just demo apps that die after install.
 </p>
 
 <p align="center">
@@ -17,31 +17,32 @@ Building applications that solve real business problems and improve workflow, pr
 
 ## About Me
 
-I am a **Software Engineer** and **Full-Stack Mobile Developer** with over **2 years of professional experience** building real-world mobile and backend applications.
+Software Engineer and Full-Stack Developer with **2+ years of experience** building production-grade mobile and backend systems.
 
-I specialize in:
-- Flutter mobile development
+I work across:
+- Flutter mobile applications
 - Node.js backend development
-- REST API design
-- Scalable and production-ready architecture
+- RESTful API design and integration
+- Scalable system architecture
 
-I completed my **BS in Software Engineering (BSSE)** and started my career building mobile applications and backend services used in real business environments.
+I hold a **BS in Software Engineering (BSSE)** and have worked on real-world applications used in business environments, not just tutorial projects collecting dust.
 
 ---
 
-## What I Do
+## What I Build
 
-I design and build software that helps businesses:
-- Improve productivity  
-- Automate workflows  
-- Build scalable mobile applications  
-- Develop reliable backend systems  
+I focus on software that actually gets used:
 
-My focus is always:
-- Clean architecture  
-- Performance  
-- Maintainable code  
-- Real-world usability  
+- Mobile apps that scale beyond MVP stage  
+- Backend systems that don’t fall apart under real traffic  
+- API-driven architectures for cross-platform products  
+- Automation tools that remove repetitive work  
+
+Core principles I follow:
+- Clean, maintainable architecture  
+- Performance that doesn’t degrade under pressure  
+- Code that other developers can understand without suffering  
+- Real-world usability over theoretical perfection  
 
 ---
 
@@ -53,13 +54,13 @@ My focus is always:
 
 ---
 
-## Featured Work
+## Work Focus Areas
 
-Some of the things I work on:
-- CRM and productivity applications  
-- Full-stack mobile apps  
-- API-driven platforms  
-- Backend services for mobile applications  
+- CRM & business productivity systems  
+- Full-stack mobile applications  
+- Backend API development  
+- Scalable service architectures  
+- App performance optimization  
 
 ---
 
@@ -92,8 +93,7 @@ Some of the things I work on:
 ## Quote
 
 <p align="center">
-"If you know code you can change the world."  
-— Haddi
+"If you know code you can change the world." — Haddi
 </p>
 
 ---
