@@ -1,4 +1,4 @@
-\<h1 align="center">Muhammad Haddi</h1>
+<h1 align="center">Muhammad Haddi</h1>
 
 <p align="center">
   <strong>Software Engineer • Full-Stack Mobile Developer</strong>
