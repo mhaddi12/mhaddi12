@@ -96,7 +96,7 @@ export const experience = [
   {
     version: 'v3.0',
     date: 'Feb 2024 – Jun 2025',
-    title: 'FHTMLlutter Developer',
+    title: 'Flutter Developer',
     current: false,
     company: 'BitLogicx · Lahore',
     bullets: [
@@ -132,7 +132,7 @@ export const projects = [
     name: 'EasyBooks',
     description:
       'Subscription-based business app with RevenueCat integration, PDF invoice generation, ZIP export and premium access management.',
-    tags: ['FHTMLlutter', 'RevenueCat', 'PDF'],
+    tags: ['Flutter', 'RevenueCat', 'PDF'],
   },
   {
     num: '03',
