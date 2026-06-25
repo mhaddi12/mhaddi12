@@ -4,7 +4,8 @@ export const siteConfig = {
   description:
     'Muhammad Haddi is a Flutter Developer and Mobile App Developer in Lahore building Android & iOS apps, Node.js backends, and Firebase solutions for startups and businesses.',
   url: 'https://haddidev.xyz',
-  image: 'https://avatars.githubusercontent.com/u/159878070?v=4',
+  image: '/profile.png',
+  imageAlt: 'Portrait of Muhammad Haddi, Flutter Developer',
   email: 'se.haddi1@gmail.com',
   phone: '+92-343-4034159',
   location: 'Lahore, Pakistan',

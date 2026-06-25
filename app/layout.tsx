@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import { Space_Grotesk, Inter, JetBrains_Mono } from 'next/font/google';
-// import './globals.css';
+import './globals.css';
 import { siteConfig } from '@/lib/data';
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-space' });
@@ -50,7 +50,7 @@ const jsonLd = {
   url: siteConfig.url,
   email: `mailto:${siteConfig.email}`,
   telephone: siteConfig.phone,
-  image: siteConfig.image,
+  image: `${siteConfig.url}${siteConfig.image}`,
   address: { '@type': 'PostalAddress', addressLocality: 'Lahore', addressCountry: 'PK' },
   sameAs: [siteConfig.linkedin, siteConfig.github],
   knowsAbout: [
