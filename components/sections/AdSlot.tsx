@@ -14,17 +14,15 @@ export default function AdSlot() {
     <section id="ads">
       <div className="wrap">
         <div className="ad-slot">
-          <div>
-            <span className="eyebrow">Sponsored</span>
-            <ins
-              className="adsbygoogle"
-              style={{ display: 'block' }}
-              data-ad-client={siteConfig.adsenseId}
-              data-ad-slot={siteConfig.adsenseSlot}
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-            />
-          </div>
+          <span className="eyebrow" style={{ marginBottom: '12px' }}>Sponsored</span>
+          <ins
+            className="adsbygoogle"
+            style={{ display: 'block', width: '100%', minHeight: '90px' }}
+            data-ad-client={siteConfig.adsenseId}
+            data-ad-slot={siteConfig.adsenseSlot}
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          />
         </div>
       </div>
     </section>
