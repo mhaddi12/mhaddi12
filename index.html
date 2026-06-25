@@ -68,6 +68,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2045842675868693" crossorigin="anonymous"></script>
 
   <style>
     :root {
@@ -251,6 +252,23 @@
     .rel-body li { color: var(--muted); font-size: 0.93rem; padding-left: 20px; position: relative; }
     .rel-body li::before { content: "▹"; position: absolute; left: 0; color: var(--gold-deep); }
     .now-pill { display: inline-block; font-family: 'JetBrains Mono'; font-size: 0.66rem; letter-spacing: 0.05em; padding: 3px 9px; border-radius: 20px; background: rgba(74,208,138,0.12); color: #4ad08a; margin-left: 10px; vertical-align: middle; }
+
+    /* ads */
+    .ad-slot {
+      margin: 12px auto 0;
+      max-width: 728px;
+      min-height: 90px;
+      border: 1px dashed rgba(240,195,107,0.25);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.03);
+      padding: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--muted);
+    }
+    .ad-slot small { display: block; margin-top: 8px; color: var(--muted-2); }
 
     /* projects */
     .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 22px; }
@@ -592,6 +610,23 @@
       </div>
     </section>
 
+    <section id="ads">
+      <div class="wrap">
+        <div class="ad-slot">
+          <div>
+            <span class="eyebrow">Sponsored</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2045842675868693"
+                 data-ad-slot="7216674226"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <small>Replace the placeholder AdSense IDs with your real publisher ID and ad slot.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact">
       <div class="wrap">
@@ -618,6 +653,8 @@
   </footer>
 
   <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
     // nav scroll state
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
