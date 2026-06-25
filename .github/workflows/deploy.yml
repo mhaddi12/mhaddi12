@@ -18,11 +18,10 @@ jobs:
           cache: npm
 
       - run: npm ci
+
       - run: npm run build
         env:
-          MONGODB_URI: ${{ secrets.MONGODB_URI }}
-          BLOG_SECRET: ${{ secrets.BLOG_SECRET }}
-
-# Deployment is handled automatically by Vercel.
-# Connect your GitHub repo at vercel.com → Import Project.
-# Add MONGODB_URI and BLOG_SECRET in Vercel → Settings → Environment Variables.
+          # Use repo secrets if set, otherwise dummy values are fine —
+          # blog pages are force-dynamic so MongoDB is never called at build time.
+          MONGODB_URI: ${{ secrets.MONGODB_URI || 'mongodb+srv://dummy:dummy@localhost/portfolio' }}
+          BLOG_SECRET: ${{ secrets.BLOG_SECRET || 'ci-placeholder' }}
