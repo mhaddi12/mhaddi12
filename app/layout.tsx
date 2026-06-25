@@ -1,9 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import { Space_Grotesk, Inter, JetBrains_Mono } from 'next/font/google';
-// Suppress TS error for side-effect CSS import when no module declaration is present
-// @ts-ignore: Implicit any for CSS module import
-import './globals.css';
+// import './globals.css';
 import { siteConfig } from '@/lib/data';
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-space' });
