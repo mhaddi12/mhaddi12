@@ -15,7 +15,7 @@ export default function PostCard({ post }: { post: Post }) {
   });
 
   return (
-    <Link href={`/blog/${post.slug}`} className="post-card">
+    <Link href={`/blog/${post.slug}`} className="post-card" prefetch={false}>
       <div className="post-meta">
         <span className="post-date mono">{date}</span>
         <span className="post-views mono">{post.views} views</span>
