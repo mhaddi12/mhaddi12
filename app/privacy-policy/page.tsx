@@ -4,26 +4,115 @@ import { siteConfig } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: `Privacy Policy | ${siteConfig.name}`,
-  description: 'Privacy policy for Muhammad Haddi portfolio website.',
+  description: 'Privacy policy for Muhammad Haddi portfolio and blog website.',
 };
 
+const section: React.CSSProperties = { marginBottom: '32px' };
+const h2Style: React.CSSProperties = {
+  fontFamily: 'Space Grotesk, sans-serif',
+  fontSize: '1.1rem',
+  fontWeight: 600,
+  color: 'var(--text)',
+  marginBottom: '10px',
+};
+const p: React.CSSProperties = { color: 'var(--muted)', lineHeight: 1.75, marginBottom: '10px' };
+
 export default function PrivacyPolicy() {
+  const updated = 'June 26, 2025';
+
   return (
     <main style={{ maxWidth: '760px', margin: '120px auto 80px', padding: '0 24px' }}>
-      <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', color: 'var(--gold)', marginBottom: '24px' }}>
+      <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', color: 'var(--gold)', marginBottom: '8px' }}>
         Privacy Policy
       </h1>
-      <p style={{ color: 'var(--muted)', marginBottom: '16px' }}>
-        This site uses Google AdSense to display ads. Google and its partners may use cookies to serve ads
-        based on your prior visits to this website or other websites. You may opt out of personalised
-        advertising by visiting{' '}
-        <a href="https://www.google.com/settings/ads" style={{ color: 'var(--gold)' }}>
-          Google Ads Settings
-        </a>.
+      <p style={{ color: 'var(--muted-2)', fontSize: '0.85rem', marginBottom: '40px' }}>
+        Last updated: {updated}
       </p>
-      <p style={{ color: 'var(--muted)', marginBottom: '24px' }}>
-        No personal data is collected or stored by this website.
-      </p>
+
+      <div style={section}>
+        <h2 style={h2Style}>What this site is</h2>
+        <p style={p}>
+          This is the personal portfolio and blog of Muhammad Haddi — a mobile developer. The site
+          displays project work, skills, and technical articles. No user accounts, registration, or
+          login exist anywhere on this site.
+        </p>
+      </div>
+
+      <div style={section}>
+        <h2 style={h2Style}>Data we collect</h2>
+        <p style={p}>
+          <strong style={{ color: 'var(--text)' }}>Blog view counts.</strong> When you open a blog
+          post, an anonymous counter is incremented in our database (MongoDB Atlas). No IP address,
+          device ID, or any personally identifying information is stored alongside the count.
+        </p>
+        <p style={p}>
+          <strong style={{ color: 'var(--text)' }}>No other personal data.</strong> We do not
+          collect your name, email, location, or any other personal information. There are no
+          comment forms, contact forms with stored submissions, or tracking pixels on this site.
+        </p>
+      </div>
+
+      <div style={section}>
+        <h2 style={h2Style}>Google AdSense</h2>
+        <p style={p}>
+          This site uses Google AdSense to display advertisements on the main portfolio page and
+          within blog posts. Google and its partners may use cookies to serve ads based on your
+          prior visits to this website or other websites.
+        </p>
+        <p style={p}>
+          You may opt out of personalised advertising by visiting{' '}
+          <a href="https://www.google.com/settings/ads" style={{ color: 'var(--gold)' }}>
+            Google Ads Settings
+          </a>{' '}
+          or{' '}
+          <a href="https://www.aboutads.info/choices/" style={{ color: 'var(--gold)' }}>
+            aboutads.info
+          </a>.
+        </p>
+      </div>
+
+      <div style={section}>
+        <h2 style={h2Style}>Third-party services</h2>
+        <p style={p}>
+          <strong style={{ color: 'var(--text)' }}>MongoDB Atlas</strong> — stores blog post
+          content and anonymous view counters. Hosted on MongoDB&apos;s cloud infrastructure.
+        </p>
+        <p style={p}>
+          <strong style={{ color: 'var(--text)' }}>Vercel</strong> — hosts this website. Vercel
+          may collect standard server access logs (IP, request path, timestamp) as part of normal
+          infrastructure operation. See{' '}
+          <a href="https://vercel.com/legal/privacy-policy" style={{ color: 'var(--gold)' }}>
+            Vercel&apos;s Privacy Policy
+          </a>.
+        </p>
+        <p style={p}>
+          <strong style={{ color: 'var(--text)' }}>Google AdSense</strong> — see the AdSense
+          section above. See{' '}
+          <a href="https://policies.google.com/privacy" style={{ color: 'var(--gold)' }}>
+            Google&apos;s Privacy Policy
+          </a>.
+        </p>
+      </div>
+
+      <div style={section}>
+        <h2 style={h2Style}>Cookies</h2>
+        <p style={p}>
+          This site itself does not set any cookies. Google AdSense may set cookies for ad
+          personalisation. You can control cookies through your browser settings or opt out via
+          Google Ads Settings linked above.
+        </p>
+      </div>
+
+      <div style={section}>
+        <h2 style={h2Style}>Contact</h2>
+        <p style={p}>
+          Questions about this policy? Reach out at{' '}
+          <a href={`mailto:${siteConfig.email}`} style={{ color: 'var(--gold)' }}>
+            {siteConfig.email}
+          </a>.
+        </p>
+      </div>
+
       <Link href="/" style={{ color: 'var(--gold)' }}>← Back to portfolio</Link>
     </main>
   );
