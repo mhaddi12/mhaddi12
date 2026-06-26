@@ -366,6 +366,33 @@ footer .mono { color: var(--muted); }
   .blog-grid { grid-template-columns: 1fr; }
 }
 
+/* ─── SKELETON LOADER ─── */
+@keyframes shimmer {
+  0%   { background-position: -600px 0; }
+  100% { background-position:  600px 0; }
+}
+.skeleton {
+  border-radius: 8px;
+  background: linear-gradient(90deg, var(--surface) 25%, var(--surface-2) 50%, var(--surface) 75%);
+  background-size: 600px 100%;
+  animation: shimmer 1.4s infinite linear;
+}
+.skeleton-heading  { height: 40px; width: 180px; border-radius: 10px; }
+.skeleton-subtext  { height: 18px; width: 420px; max-width: 100%; }
+.skeleton-card {
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+.skeleton-tag-row  { display: flex; gap: 8px; margin-bottom: 18px; }
+.skeleton-tag      { height: 24px; width: 64px; border-radius: 20px; }
+.skeleton-title    { height: 26px; width: 85%; margin-bottom: 14px; }
+.skeleton-text     { height: 14px; width: 100%; margin-bottom: 10px; }
+.skeleton-text--short { width: 65%; }
+.skeleton-meta     { display: flex; gap: 16px; margin-top: 22px; }
+.skeleton-meta-item { height: 13px; width: 80px; }
+
 /* ─── FLOATING BLOG AD ─── */
 .floating-ad {
   position: fixed;
