@@ -18,7 +18,7 @@ const h2Style: React.CSSProperties = {
 const p: React.CSSProperties = { color: 'var(--muted)', lineHeight: 1.75, marginBottom: '10px' };
 
 export default function PrivacyPolicy() {
-  const updated = 'June 26, 2025';
+  const updated = 'June 26, 2026';
 
   return (
     <main style={{ maxWidth: '760px', margin: '120px auto 80px', padding: '0 24px' }}>
@@ -56,11 +56,17 @@ export default function PrivacyPolicy() {
         <h2 style={h2Style}>Google AdSense</h2>
         <p style={p}>
           This site uses Google AdSense to display advertisements on the main portfolio page and
-          within blog posts. Google and its partners may use cookies to serve ads based on your
-          prior visits to this website or other websites.
+          within blog posts. AdSense is <strong style={{ color: 'var(--text)' }}>opt-in</strong> —
+          the AdSense script is not loaded until you click <em>Accept</em> on the cookie consent
+          banner shown on your first visit.
         </p>
         <p style={p}>
-          You may opt out of personalised advertising by visiting{' '}
+          If you accepted and later change your mind, open your browser&apos;s developer console
+          and run <code style={{ color: 'var(--gold)', background: 'var(--surface)', padding: '1px 6px', borderRadius: '4px' }}>localStorage.removeItem(&apos;cookie-consent&apos;)</code> then
+          refresh — the banner will reappear so you can choose again.
+        </p>
+        <p style={p}>
+          You can also opt out of personalised advertising at any time via{' '}
           <a href="https://www.google.com/settings/ads" style={{ color: 'var(--gold)' }}>
             Google Ads Settings
           </a>{' '}
@@ -95,11 +101,22 @@ export default function PrivacyPolicy() {
       </div>
 
       <div style={section}>
-        <h2 style={h2Style}>Cookies</h2>
+        <h2 style={h2Style}>Cookies &amp; your consent</h2>
         <p style={p}>
-          This site itself does not set any cookies. Google AdSense may set cookies for ad
-          personalisation. You can control cookies through your browser settings or opt out via
-          Google Ads Settings linked above.
+          On your first visit a consent banner appears at the bottom of the screen. Your choice is
+          saved in <code style={{ color: 'var(--gold)', background: 'var(--surface)', padding: '1px 6px', borderRadius: '4px' }}>localStorage</code> (not a cookie) so the banner does not re-appear.
+        </p>
+        <p style={p}>
+          <strong style={{ color: 'var(--text)' }}>If you click Accept</strong> — Google AdSense
+          loads and may set third-party cookies on <code style={{ color: 'var(--gold)', background: 'var(--surface)', padding: '1px 6px', borderRadius: '4px' }}>doubleclick.net</code> and <code style={{ color: 'var(--gold)', background: 'var(--surface)', padding: '1px 6px', borderRadius: '4px' }}>google.com</code> for
+          ad personalisation.
+        </p>
+        <p style={p}>
+          <strong style={{ color: 'var(--text)' }}>If you click Decline</strong> — the AdSense
+          script is never loaded and no third-party cookies are set.
+        </p>
+        <p style={p}>
+          This site itself sets no first-party cookies.
         </p>
       </div>
 
