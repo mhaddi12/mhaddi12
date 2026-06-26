@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from 'next';
-import Script from 'next/script';
 import { Space_Grotesk, Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/lib/data';
+import CookieConsent from '@/components/CookieConsent';
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-space' });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600'], variable: '--font-inter' });
@@ -78,12 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
-        <Script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.adsenseId}`}
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        <CookieConsent adsenseId={siteConfig.adsenseId} />
       </body>
     </html>
   );
