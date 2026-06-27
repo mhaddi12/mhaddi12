@@ -9,11 +9,18 @@ import { siteConfig } from '@/lib/data';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: `Blog | ${siteConfig.name}`,
-  description: 'Flutter development tips, mobile app architecture, Node.js backends, and lessons from shipping production apps.',
+  title: `Flutter & Mobile App Dev Blog | ${siteConfig.name}`,
+  description: 'Flutter tutorials, mobile app architecture guides, Node.js backend tips, and real lessons from shipping production apps — by Muhammad Haddi, Flutter Developer in Lahore.',
+  keywords: [
+    'Flutter tutorial', 'Flutter blog', 'mobile app development blog',
+    'Flutter tips', 'Dart programming', 'Flutter architecture',
+    'Riverpod tutorial', 'Flutter state management', 'Flutter clean architecture',
+    'Node.js tutorial', 'Firebase Flutter', 'app development Pakistan',
+    'Muhammad Haddi blog',
+  ],
   openGraph: {
-    title: `Blog | ${siteConfig.name}`,
-    description: 'Flutter development tips and mobile app engineering articles.',
+    title: `Flutter & Mobile App Dev Blog | ${siteConfig.name}`,
+    description: 'Flutter tutorials, mobile app architecture, and lessons from shipping production apps.',
     url: `${siteConfig.url}/blog`,
   },
 };
