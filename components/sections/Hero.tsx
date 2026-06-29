@@ -9,8 +9,8 @@ export default function Hero() {
         <div>
           <span className="eyebrow">Flutter · Node.js · Mobile Engineering</span>
           <h1>
-            I build <span className="grad">Flutter apps</span> for iOS &amp; Android —{' '}
-            and the <span className="grad">backends</span> that run them.
+            I build <span className="grad">Flutter apps</span> for iOS &amp; Android
+            — and the <span className="grad">backends</span> behind them.
           </h1>
           <p className="lead">
             I&apos;m <b>Muhammad Haddi</b>, a software engineer based in Lahore. I&apos;ve spent{' '}
@@ -21,14 +21,6 @@ export default function Hero() {
           <div className="hero-cta">
             <Link href="#contact" className="btn btn-primary">Hire me →</Link>
             <Link href="#projects" className="btn btn-ghost">View my work</Link>
-          </div>
-          <div className="hero-stats">
-            {heroStats.map((s) => (
-              <div key={s.l} className="stat">
-                <div className="n">{s.n}</div>
-                <div className="l">{s.l}</div>
-              </div>
-            ))}
           </div>
         </div>
 

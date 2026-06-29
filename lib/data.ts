@@ -17,9 +17,9 @@ export const siteConfig = {
 };
 
 export const heroStats = [
-  { n: '3+', l: 'Years experience' },
-  { n: '6+', l: 'Companies shipped for' },
-  { n: '10+', l: 'Apps & platforms' },
+  { n: '3+', l: 'Years' },
+  { n: '6+', l: 'Companies' },
+  { n: '10+', l: 'Apps shipped' },
 ];
 
 export const skills = [

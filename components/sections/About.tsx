@@ -19,7 +19,7 @@ export default function About() {
       <div className="wrap">
         <div className="sec-head reveal">
           <span className="eyebrow">About</span>
-          <h2>I build things people open every day.</h2>
+          <h2>Who I am &amp; what I do.</h2>
         </div>
         <div className="about-grid">
           <div className="about-text reveal">
