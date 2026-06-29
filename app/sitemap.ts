@@ -3,7 +3,7 @@ import { siteConfig } from '@/lib/data';
 import { connectDB } from '@/lib/mongodb';
 import { Post } from '@/models/Post';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 3600;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.url;
@@ -31,7 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   try {
     const timeout = new Promise<never>((_, reject) =>
-      setTimeout(() => reject(new Error('DB timeout')), 6000)
+      setTimeout(() => reject(new Error('DB timeout')), 3000)
     );
     await Promise.race([connectDB(), timeout]);
     const posts = await Post.find({ published: true })
