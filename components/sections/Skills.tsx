@@ -15,6 +15,10 @@ export default function Skills() {
               <div className="sc-head">
                 <div className="sc-ico">{s.icon}</div>
                 <h3>{s.name}</h3>
+                <span className="sc-pct">{s.level}%</span>
+              </div>
+              <div className="skill-progress">
+                <div className="skill-progress-fill" style={{ width: `${s.level}%` }} />
               </div>
               <div className="tags">
                 {s.tags.map((t) => <span key={t} className="tag">{t}</span>)}

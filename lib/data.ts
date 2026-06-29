@@ -1,11 +1,11 @@
 export const siteConfig = {
   name: 'Muhammad Haddi',
-  title: 'Flutter Developer & Mobile App Developer | Muhammad Haddi — Lahore, Pakistan',
+  title: 'Software Engineer | Muhammad Haddi — Lahore, Pakistan',
   description:
-    'Muhammad Haddi is a Flutter & Full-Stack Mobile Developer in Lahore, Pakistan — building cross-platform Android & iOS apps with Flutter, Node.js REST APIs, MongoDB backends, and Firebase solutions for startups and businesses.',
+    'Muhammad Haddi is a Software Engineer in Lahore, Pakistan — building cross-platform Android & iOS apps with Flutter, Node.js REST APIs, MongoDB backends, and Firebase solutions for startups and businesses.',
   url: 'https://haddidev.xyz',
   image: '/profile.png',
-  imageAlt: 'Portrait of Muhammad Haddi, Flutter Developer',
+  imageAlt: 'Portrait of Muhammad Haddi, Software Engineer',
   email: 'se.haddi1@gmail.com',
   phone: '+92-343-4034159',
   location: 'Lahore, Pakistan',
@@ -26,31 +26,37 @@ export const skills = [
   {
     icon: '📱',
     name: 'Mobile Development',
+    level: 95,
     tags: ['Flutter', 'Dart', 'Android', 'iOS', 'Cross-Platform', 'Responsive UI', 'App Store', 'Play Store'],
   },
   {
     icon: '⚙️',
     name: 'State Management',
+    level: 90,
     tags: ['Riverpod', 'Provider', 'GetX', 'StateNotifier', 'ValueNotifier'],
   },
   {
     icon: '🖥️',
     name: 'Backend & APIs',
+    level: 82,
     tags: ['Node.js', 'Express', 'MongoDB', 'REST APIs', 'JWT Auth', 'JSON'],
   },
   {
     icon: '☁️',
     name: 'Cloud & Services',
+    level: 78,
     tags: ['Firebase', 'AWS SES', 'RevenueCat', 'OneSignal', 'Push Notifications', 'Cloud Messaging'],
   },
   {
     icon: '🏛️',
     name: 'Architecture & Design',
+    level: 88,
     tags: ['Clean Architecture', 'MVVM', 'Repository Pattern', 'SOLID', 'Design Patterns'],
   },
   {
     icon: '🔧',
     name: 'Tools & Platforms',
+    level: 85,
     tags: ['Git', 'GitHub', 'Postman', 'Android Studio', 'VS Code', 'Xcode', 'Linux'],
   },
 ];

@@ -4,12 +4,12 @@ export default function About() {
       <div className="wrap">
         <div className="sec-head reveal">
           <span className="eyebrow">About</span>
-          <h2>Mobile-first developer, full-stack mindset.</h2>
+          <h2>Software engineer, full-stack mindset.</h2>
         </div>
         <div className="about-grid">
           <div className="about-text reveal">
             <p>
-              I&apos;m a results-driven Flutter developer who turns ideas into{' '}
+              I&apos;m a results-driven <b>Software Engineer</b> who turns ideas into{' '}
               <b>scalable, store-ready mobile apps</b>. Over the last three years I&apos;ve built enterprise
               CRM platforms, subscription products, real-time communication apps and cloud-integrated tools —
               for Android and iOS alike.
@@ -28,7 +28,7 @@ export default function About() {
           <aside className="about-card reveal">
             <h3>Quick facts</h3>
             {[
-              { k: 'Role',       v: 'Flutter / Full-Stack Mobile Dev' },
+              { k: 'Role',       v: 'Software Engineer' },
               { k: 'Location',   v: 'Lahore, Pakistan' },
               { k: 'Experience', v: '3+ years' },
               { k: 'Education',  v: 'BS Software Engineering' },

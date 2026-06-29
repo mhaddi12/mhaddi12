@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from 'next';
-import { Space_Grotesk, Inter, JetBrains_Mono } from 'next/font/google';
+import { Plus_Jakarta_Sans, Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/lib/data';
 import CookieConsent from '@/components/CookieConsent';
 
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-space' });
+const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-space' });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600'], variable: '--font-inter' });
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-mono' });
 
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     siteName: siteConfig.name,
     locale: 'en_US',
-    images: [{ url: siteConfig.image, alt: 'Portrait of Muhammad Haddi, Flutter Developer and Mobile App Developer' }],
+    images: [{ url: siteConfig.image, alt: 'Portrait of Muhammad Haddi, Software Engineer' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -80,7 +80,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Muhammad Haddi',
-  jobTitle: 'Flutter & Full-Stack Mobile Developer',
+  jobTitle: 'Software Engineer',
   url: siteConfig.url,
   email: `mailto:${siteConfig.email}`,
   telephone: siteConfig.phone,
@@ -98,7 +98,7 @@ const jsonLd = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const fontClasses = [spaceGrotesk.variable, inter.variable, jetbrainsMono.variable].join(' ');
+  const fontClasses = [plusJakartaSans.variable, inter.variable, jetbrainsMono.variable].join(' ');
 
   return (
     <html lang="en" className={fontClasses}>
