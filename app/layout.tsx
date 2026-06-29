@@ -16,21 +16,43 @@ export const metadata: Metadata = {
   title: siteConfig.title,
   description: siteConfig.description,
   keywords: [
-    'Muhammad Haddi',
-    'Flutter Developer', 'Flutter Developer Lahore', 'Flutter Developer Pakistan',
-    'Mobile App Developer', 'Mobile App Developer Lahore', 'Mobile App Developer Pakistan',
-    'Flutter Freelancer', 'Flutter Freelancer Pakistan', 'Freelance Flutter Developer',
-    'Hire Flutter Developer', 'Flutter Consultant', 'Flutter App Development',
-    'Android Developer', 'iOS Developer', 'Cross-Platform App Developer',
-    'Dart Developer', 'Node.js Developer', 'Firebase Developer',
-    'React Native Alternative', 'Flutter vs React Native',
-    'App Developer for Hire', 'Mobile App Development Pakistan',
-    'Startup App Developer', 'Flutter Riverpod', 'Clean Architecture Flutter',
-    'Node.js Developer Lahore', 'Backend Developer Pakistan', 'Full Stack Developer Pakistan',
-    'REST API Developer', 'MongoDB Developer', 'Firebase Backend',
-    'API Development', 'Backend Developer Lahore', 'Full Stack Mobile Developer',
-    'Express.js Developer', 'Server-Side Development', 'Cloud Functions Flutter',
-    'Lahore', 'Pakistan',
+    // — Identity
+    'Muhammad Haddi', 'Haddi Developer', 'haddidev',
+
+    // — Core role (generic, no name)
+    'Flutter Developer', 'Flutter Developer Portfolio', 'Flutter App Developer',
+    'Mobile App Developer', 'Cross-Platform App Developer', 'Dart Developer',
+    'Android Developer', 'iOS Developer', 'Full Stack Mobile Developer',
+
+    // — Hire / service intent (what people search when they want to hire)
+    'Hire Flutter Developer', 'Hire Mobile App Developer', 'Flutter Developer for Hire',
+    'Freelance Flutter Developer', 'Flutter Freelancer', 'Flutter Consultant',
+    'Flutter App Development Services', 'Mobile App Development Services',
+    'App Developer for Hire', 'Remote Flutter Developer', 'Contract Flutter Developer',
+
+    // — Tech stack (generic searches)
+    'Flutter Firebase Developer', 'Flutter Node.js Developer', 'Flutter MongoDB Developer',
+    'Flutter Riverpod Developer', 'Flutter Clean Architecture', 'Flutter REST API',
+    'Node.js Developer', 'MongoDB Developer', 'Express.js Developer',
+    'Firebase Developer', 'REST API Developer', 'Backend Developer',
+    'Full Stack Developer', 'API Development Services',
+
+    // — Use case / industry
+    'CRM App Development', 'Business App Development', 'Startup App Developer',
+    'Subscription App Flutter', 'Enterprise Mobile App Developer',
+    'Flutter App for Startup', 'Cross-Platform Business App',
+    'App Store Deployment', 'Google Play Developer', 'iOS App Developer',
+
+    // — Location (for local + regional searches)
+    'Flutter Developer Lahore', 'Flutter Developer Pakistan',
+    'Mobile App Developer Lahore', 'Mobile App Developer Pakistan',
+    'Freelance Flutter Developer Pakistan', 'Hire Flutter Developer Pakistan',
+    'Backend Developer Lahore', 'Full Stack Developer Pakistan',
+    'Node.js Developer Lahore',
+
+    // — Comparison / alternative searches
+    'Flutter vs React Native Developer', 'React Native Alternative',
+    'Cross-Platform Alternative to Native App',
   ],
   authors: [{ name: 'Muhammad Haddi' }],
   robots: { index: true, follow: true, 'max-image-preview': 'large' },
