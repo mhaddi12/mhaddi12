@@ -345,8 +345,13 @@ footer .mono { color: var(--muted); }
 .blog-content ul, .blog-content ol { color: var(--muted); padding-left: 24px; margin-bottom: 20px; }
 .blog-content li { margin-bottom: 8px; line-height: 1.7; }
 .blog-content code { font-family: var(--font-mono); font-size: 0.85em; background: var(--surface); border: 1px solid var(--line-soft); padding: 2px 7px; border-radius: 6px; color: var(--gold); }
-.blog-content pre { background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--radius); padding: 20px; overflow-x: auto; margin-bottom: 24px; }
-.blog-content pre code { background: none; border: none; padding: 0; color: var(--text); }
+.code-block-wrapper { position: relative; margin-bottom: 24px; }
+.code-block-wrapper pre { border: 1px solid var(--line-soft); border-radius: var(--radius); overflow: hidden; margin-bottom: 0; }
+.blog-content pre { border: 1px solid var(--line-soft); border-radius: var(--radius); overflow: hidden; margin-bottom: 24px; }
+.blog-content pre code { display: block; padding: 20px; overflow-x: auto; background: none !important; border: none; color: inherit; font-size: 0.875rem; line-height: 1.6; }
+.code-copy-btn { position: absolute; top: 10px; right: 10px; z-index: 2; padding: 4px 10px; font-size: 0.72rem; font-family: var(--font-mono); background: rgba(255,255,255,0.08); color: var(--muted); border: 1px solid var(--line-soft); border-radius: 6px; cursor: pointer; transition: background 0.15s, color 0.15s; }
+.code-copy-btn:hover { background: rgba(255,255,255,0.15); color: var(--text); }
+.code-copy-btn:active { background: var(--gold-deep); color: #fff; }
 .blog-content blockquote { border-left: 3px solid var(--gold-deep); padding-left: 16px; margin: 24px 0; color: var(--muted); font-style: italic; }
 .blog-content a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
 .blog-content img { width: 100%; border-radius: var(--radius); margin: 24px 0; }

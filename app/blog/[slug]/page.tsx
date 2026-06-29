@@ -42,7 +42,7 @@ export default async function BlogPostPage({ params }: Props) {
   const post = await Post.findOneAndUpdate(
     { slug, published: true },
     { $inc: { views: 1 } },
-    { new: true },
+    { returnDocument: 'after' },
   ).lean();
 
   if (!post) notFound();

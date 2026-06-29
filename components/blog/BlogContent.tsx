@@ -1,23 +1,51 @@
 'use client';
+import { useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import InlineBlogAd from './InlineBlogAd';
+import rehypeHighlight from 'rehype-highlight';
+import 'highlight.js/styles/github-dark.css';
 
-const AD_EVERY = 3; // inject ad after every 3 paragraphs
+function CopyButton({ codeRef }: { codeRef: React.RefObject<HTMLPreElement | null> }) {
+  const [copied, setCopied] = useState(false);
 
-export default function BlogContent({ content }: { content: string }) {
-  const paragraphs = content.split(/\n\n+/).filter((p) => p.trim());
+  function copy() {
+    const text = codeRef.current?.querySelector('code')?.innerText ?? '';
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  }
 
   return (
+    <button className="code-copy-btn" onClick={copy} aria-label="Copy code">
+      {copied ? 'Copied!' : 'Copy'}
+    </button>
+  );
+}
+
+function CodeBlock({ children, ...props }: React.HTMLAttributes<HTMLPreElement>) {
+  const ref = useRef<HTMLPreElement>(null);
+
+  return (
+    <div className="code-block-wrapper">
+      <CopyButton codeRef={ref} />
+      <pre ref={ref} {...props}>
+        {children}
+      </pre>
+    </div>
+  );
+}
+
+export default function BlogContent({ content }: { content: string }) {
+  return (
     <div className="blog-content">
-      {paragraphs.map((para, i) => (
-        <div key={i}>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{para}</ReactMarkdown>
-          {(i + 1) % AD_EVERY === 0 && i < paragraphs.length - 1 && (
-            <InlineBlogAd index={i} />
-          )}
-        </div>
-      ))}
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeHighlight]}
+        components={{ pre: CodeBlock }}
+      >
+        {content}
+      </ReactMarkdown>
     </div>
   );
 }
