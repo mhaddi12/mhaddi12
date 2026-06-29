@@ -30,7 +30,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   try {
-    await connectDB();
+    const timeout = new Promise<never>((_, reject) =>
+      setTimeout(() => reject(new Error('DB timeout')), 6000)
+    );
+    await Promise.race([connectDB(), timeout]);
     const posts = await Post.find({ published: true })
       .select('slug publishedAt updatedAt')
       .sort({ publishedAt: -1 })
