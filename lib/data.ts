@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'Muhammad Haddi',
   title: 'Software Engineer | Muhammad Haddi — Lahore, Pakistan',
   description:
-    'Muhammad Haddi is a Software Engineer in Lahore, Pakistan — building cross-platform Android & iOS apps with Flutter, Node.js REST APIs, MongoDB backends, and Firebase solutions for startups and businesses.',
+    'Muhammad Haddi is a software engineer based in Lahore, Pakistan. He writes Flutter apps for iOS and Android, Node.js backends, and whatever else it takes to ship a working product.',
   url: 'https://haddidev.xyz',
   image: '/profile.png',
   imageAlt: 'Portrait of Muhammad Haddi, Software Engineer',
@@ -69,10 +69,10 @@ export const experience = [
     current: true,
     company: 'Omnisoft · Lahore',
     bullets: [
-      'Built production-grade Flutter apps with scalable architecture and reusable components.',
-      'Integrated RevenueCat subscriptions with Standard & Premium tier access control.',
-      'Implemented PDF invoice/slip generation and ZIP export for business documents.',
-      'Developed Node.js + MongoDB services with Amazon SES for large-scale email campaigns.',
+      'Writing Flutter apps end-to-end — architecture, UI, state, the whole thing.',
+      'Wired up RevenueCat subscriptions with free, Standard and Premium tiers, including paywall logic and access control.',
+      'Built PDF invoice generation and ZIP export so users can download everything straight from the app.',
+      'Set up a Node.js + MongoDB email platform on AWS SES — handles bulk sends, custom domains and delivery tracking.',
     ],
   },
   {
@@ -82,10 +82,10 @@ export const experience = [
     current: false,
     company: 'Optima Geeks · Lahore',
     bullets: [
-      'Developed an enterprise CRM mobile app for Android and iOS.',
-      'Implemented Riverpod state management across complex workflows.',
-      'Built notifications, in-app messaging and document management modules.',
-      'Published and maintained releases on Google Play and the App Store.',
+      'Built a CRM app for Android and iOS — forms, client records, task workflows.',
+      'Used Riverpod throughout and kept the state clean across some pretty involved screens.',
+      'Added push notifications, in-app chat and document upload — things the client actually asked for.',
+      'Handled the Play Store and App Store releases myself, including update submissions.',
     ],
   },
   {
@@ -95,9 +95,9 @@ export const experience = [
     current: false,
     company: 'Digixvally LLC · Lahore',
     bullets: [
-      'Integrated Agora SDK for video calling, voice and live streaming.',
-      'Built advanced Google Maps features: routes, custom markers, location services.',
-      'Developed API-driven experiences and optimised app responsiveness.',
+      'Got Agora working for video calls, voice calls and live streams — trickier than it looks.',
+      'Built the Maps side of the app: live routes, custom markers, real-time location.',
+      'Connected the app to the backend APIs and put work into making the UI feel fast.',
     ],
   },
   {
@@ -107,9 +107,9 @@ export const experience = [
     current: false,
     company: 'BitLogicx · Lahore',
     bullets: [
-      'Built social media and communication apps with Flutter, Firebase & REST APIs.',
-      'Implemented auth, user management, media upload and content sharing.',
-      'Developed real-time features and refactored legacy codebases for maintainability.',
+      'Built a social app with feeds, follows and real-time chat using Flutter and Firebase.',
+      'Wrote the auth flow, profile management, photo uploads and content sharing.',
+      'Added real-time features and cleaned up a codebase that had gotten a bit messy.',
     ],
   },
   {
@@ -119,9 +119,9 @@ export const experience = [
     current: false,
     company: 'XIIst · Lahore',
     bullets: [
-      'Developed and maintained app features with responsive UIs.',
-      'Integrated REST APIs and assisted with Flutter SDK upgrades.',
-      'Collaborated with senior developers on production apps and redesigns.',
+      'Picked up tickets, built screens and kept things from breaking.',
+      'Hooked up REST APIs and helped when the team upgraded the Flutter SDK.',
+      'Mostly learning — partly contributing — alongside the senior devs.',
     ],
   },
 ];
@@ -131,42 +131,42 @@ export const projects = [
     num: '01',
     name: 'Optima CRM Mobile',
     description:
-      'Enterprise CRM for Android & iOS with Riverpod state management, notifications, in-app messaging, document management, dynamic forms and workflow automation.',
+      'A CRM app for field teams on Android and iOS. Riverpod under the hood, with push notifications, in-app chat, document uploads and form-based workflows.',
     tags: ['Flutter', 'Riverpod', 'CRM'],
   },
   {
     num: '02',
     name: 'EasyBooks',
     description:
-      'Subscription-based business app with RevenueCat integration, PDF invoice generation, ZIP export and premium access management.',
+      'A business app where users manage invoices, export PDFs and ZIP files, and unlock premium features through a RevenueCat subscription.',
     tags: ['Flutter', 'RevenueCat', 'PDF'],
   },
   {
     num: '03',
     name: 'Email Campaign Platform',
     description:
-      'Node.js email infrastructure on MongoDB & AWS SES with custom domains, queue processing, campaign management and delivery monitoring.',
+      'An email platform built on Node.js, MongoDB and AWS SES. Supports custom sending domains, campaign queues and delivery stats — handles bulk sends without falling over.',
     tags: ['Node.js', 'AWS SES', 'MongoDB'],
   },
   {
     num: '04',
     name: 'Streaming Platform',
     description:
-      'Live streaming & communication app built around Agora SDK, with real-time features and a performance-focused architecture.',
+      'A livestreaming app using Agora — users can go live, join streams and do voice or video calls. Built to stay smooth even when the network isn\'t great.',
     tags: ['Flutter', 'Agora SDK', 'Realtime'],
   },
   {
     num: '05',
     name: 'Social Media Application',
     description:
-      'Real-time communication platform with authentication, media sharing, cloud integrations and a scalable mobile architecture.',
+      'A social app with feeds, real-time chat, photo sharing and Firebase auth. One of my first full-feature projects — a lot went wrong and I fixed most of it.',
     tags: ['Flutter', 'Firebase', 'REST API'],
   },
   {
     num: '06',
     name: 'Treasure Hunts',
     description:
-      'A full mobile app built from scratch with scalable architecture, reusable Flutter components, API integration and a modern UX.',
-    tags: ['Flutter', 'Dart', 'UX'],
+      'A location-based treasure hunt app — clues, maps, and a fun UX. Good excuse to properly learn Google Maps in Flutter.',
+    tags: ['Flutter', 'Dart', 'Maps'],
   },
 ];

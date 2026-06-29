@@ -7,7 +7,7 @@ export default function Skills() {
         <div className="sec-head reveal">
           <span className="eyebrow">Toolbox</span>
           <h2>Technical skills</h2>
-          <p>The technologies I use to design, build and ship mobile and full-stack products.</p>
+          <p>What I reach for when I&apos;m building something.</p>
         </div>
         <div className="skill-grid">
           {skills.map((s) => (

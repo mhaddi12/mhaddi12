@@ -7,15 +7,16 @@ export default function Hero() {
     <section className="hero" id="top">
       <div className="wrap hero-grid">
         <div>
-          <span className="eyebrow">Software Engineering · Full-Stack · Mobile</span>
+          <span className="eyebrow">Flutter · Node.js · Mobile Engineering</span>
           <h1>
-            I&apos;m a <span className="grad">Software Engineer</span> building{' '}
-            <span className="grad">full-stack</span> mobile products.
+            I build <span className="grad">Flutter apps</span> for iOS &amp; Android —{' '}
+            and the <span className="grad">backends</span> that run them.
           </h1>
           <p className="lead">
-            I&apos;m <b>Muhammad Haddi</b>, a <b>Software Engineer</b> in
-            Lahore with <b>3+ years</b> shipping scalable Android &amp; iOS apps with <b>Flutter</b> &amp;{' '}
-            <b>Dart</b> — plus <b>Node.js</b>, <b>MongoDB</b>, and <b>Firebase</b> backend solutions.
+            I&apos;m <b>Muhammad Haddi</b>, a software engineer based in Lahore. I&apos;ve spent{' '}
+            <b>3+ years</b> writing Flutter code for apps that actually go on the{' '}
+            <b>App Store and Play Store</b>. When a project needs a backend, I write that too —{' '}
+            <b>Node.js</b>, <b>MongoDB</b>, <b>Firebase</b>, whatever it takes.
           </p>
           <div className="hero-cta">
             <Link href="#contact" className="btn btn-primary">Hire me →</Link>
@@ -32,48 +33,36 @@ export default function Hero() {
         </div>
 
         <div className="device-stage">
-          <div className="readme-card" aria-hidden="true">
-            <div className="readme-card-bar">
-              <span className="rc-dot rc-red" />
-              <span className="rc-dot rc-yellow" />
-              <span className="rc-dot rc-green" />
-              <span className="rc-bar-title">README.md</span>
-            </div>
-            <div className="readme-card-body">
-              <div className="rc-avatar-row">
+          <div className="profile-card" aria-hidden="true">
+            <div className="pc-banner" />
+            <div className="pc-body">
+              <div className="pc-avatar-wrap">
                 <Image
-                  className="rc-avatar"
+                  className="pc-avatar"
                   src={siteConfig.image}
                   alt="Muhammad Haddi"
-                  width={64}
-                  height={64}
+                  width={90}
+                  height={90}
                   priority
                 />
-                <div>
-                  <div className="rc-name">Muhammad Haddi</div>
-                  <div className="rc-role">Software Engineer</div>
-                </div>
               </div>
-              <div className="rc-divider" />
-              <div className="rc-info-list">
-                <div className="rc-info-row"><span className="rc-ico">📍</span><span>Lahore, Pakistan</span></div>
-                <div className="rc-info-row"><span className="rc-ico">💼</span><span>3+ Years Experience</span></div>
-                <div className="rc-info-row"><span className="rc-ico">🚀</span><span>10+ Apps Shipped</span></div>
-                <div className="rc-info-row rc-available"><span className="rc-ico">✅</span><span>Open to Opportunities</span></div>
+              <h3 className="pc-name">Muhammad Haddi</h3>
+              <p className="pc-role">Software Engineer</p>
+              <span className="pc-badge">Available for work</span>
+              <div className="pc-meta">
+                <span>📍 Lahore, PK</span>
+                <span>💼 3+ Years</span>
               </div>
-              <div className="rc-divider" />
-              <div className="rc-section-label">## Tech Stack</div>
-              <div className="rc-badges">
-                {['Flutter', 'Dart', 'Node.js', 'MongoDB', 'Firebase', 'AWS'].map((b) => (
-                  <span key={b} className="rc-badge">{b}</span>
-                ))}
+              <div className="pc-links">
+                <a href={siteConfig.github} target="_blank" rel="noopener noreferrer" className="pc-link">GitHub</a>
+                <a href={siteConfig.linkedin} target="_blank" rel="noopener noreferrer" className="pc-link">LinkedIn</a>
+                <a href={`mailto:${siteConfig.email}`} className="pc-link pc-link--primary">Email me</a>
               </div>
-              <div className="rc-divider" />
-              <div className="rc-stats-row">
+              <div className="pc-stats">
                 {heroStats.map((s) => (
-                  <div key={s.l} className="rc-stat">
-                    <div className="rc-stat-n">{s.n}</div>
-                    <div className="rc-stat-l">{s.l}</div>
+                  <div key={s.l} className="pc-stat">
+                    <span className="pc-stat-n">{s.n}</span>
+                    <span className="pc-stat-l">{s.l}</span>
                   </div>
                 ))}
               </div>

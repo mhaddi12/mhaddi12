@@ -7,7 +7,7 @@ export default function Experience() {
         <div className="sec-head reveal">
           <span className="eyebrow">Release history</span>
           <h2>Where I&apos;ve shipped</h2>
-          <p>Three years of building and maintaining production apps — newest release first.</p>
+          <p>Five companies, three years — here&apos;s what I built at each one.</p>
         </div>
         <div className="timeline">
           {experience.map((e) => (

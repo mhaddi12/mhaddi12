@@ -6,8 +6,8 @@ export default function Projects() {
       <div className="wrap">
         <div className="sec-head reveal">
           <span className="eyebrow">Selected work</span>
-          <h2>Key projects</h2>
-          <p>A few products I&apos;ve designed and built across mobile and full-stack.</p>
+          <h2>Things I&apos;ve built</h2>
+          <p>Some of the apps and tools I&apos;ve shipped — what they do and how I built them.</p>
         </div>
         <div className="proj-grid">
           {projects.map((p) => (

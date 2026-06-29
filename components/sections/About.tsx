@@ -1,47 +1,57 @@
 export default function About() {
+  const glance = [
+    { label: 'Company',    value: 'Omnisoft · Lahore' },
+    { label: 'Working on', value: 'Flutter apps and an email platform' },
+    { label: 'Learning',   value: 'System design, SwiftUI' },
+    { label: 'Education',  value: 'BS Software Engineering' },
+    { label: 'Open to',    value: 'Freelance & full-time roles', green: true },
+  ];
+
+  const strengths = [
+    { icon: '▸', text: 'Flutter apps for iOS and Android — end to end' },
+    { icon: '▸', text: 'Node.js APIs and MongoDB when the project needs a backend' },
+    { icon: '▸', text: 'Clean Architecture, Riverpod, MVVM — I care about structure' },
+    { icon: '▸', text: 'Firebase, AWS SES, RevenueCat — the integrations that actually matter' },
+  ];
+
   return (
     <section id="about">
       <div className="wrap">
         <div className="sec-head reveal">
           <span className="eyebrow">About</span>
-          <h2>Software engineer, full-stack mindset.</h2>
+          <h2>I build things people open every day.</h2>
         </div>
         <div className="about-grid">
           <div className="about-text reveal">
-            <p>
-              I&apos;m a results-driven <b>Software Engineer</b> who turns ideas into{' '}
-              <b>scalable, store-ready mobile apps</b>. Over the last three years I&apos;ve built enterprise
-              CRM platforms, subscription products, real-time communication apps and cloud-integrated tools —
-              for Android and iOS alike.
+            <p className="about-intro">
+              I&apos;ve been writing Flutter apps for three years, working with teams across Lahore
+              to ship things that end up in the hands of real users — CRMs, subscription apps, a
+              livestreaming platform, an email campaign tool. Along the way I picked up Node.js and
+              MongoDB for the backend side of things, mostly because <b>waiting on someone else to
+              write the API gets old fast</b>.
             </p>
-            <p>
-              My work covers the full picture: clean <b>Riverpod</b> architecture and reusable UI on the
-              front, and <b>Node.js + MongoDB</b> services, REST APIs and <b>AWS SES</b> email infrastructure
-              on the back. I care about clean code, performance, and shipping things people actually use.
+            <p className="about-intro">
+              I care about code that&apos;s easy to read six months later. I&apos;m not precious about
+              tech choices — I use what fits. And I&apos;m <b>open to new work</b>, remote or on-site.
             </p>
-            <p>
-              I&apos;ve published and maintained apps on both stores, collaborated across cross-functional
-              teams, and worked end-to-end through the software development lifecycle.{' '}
-              <b>Open to freelance and full-time roles</b> — remote or on-site.
-            </p>
+            <ul className="strength-list">
+              {strengths.map((s) => (
+                <li key={s.text}>
+                  <span className="sl-ico">{s.icon}</span>
+                  <span>{s.text}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-          <aside className="about-card reveal">
-            <h3>Quick facts</h3>
-            {[
-              { k: 'Role',       v: 'Software Engineer' },
-              { k: 'Location',   v: 'Lahore, Pakistan' },
-              { k: 'Experience', v: '3+ years' },
-              { k: 'Education',  v: 'BS Software Engineering' },
-            ].map(({ k, v }) => (
-              <div key={k} className="info-row">
-                <span className="k">{k}</span>
-                <span className="v">{v}</span>
+
+          <aside className="at-glance-card reveal">
+            <h3 className="agc-title">At a glance</h3>
+            {glance.map(({ label, value, green }) => (
+              <div key={label} className={`agc-row${green ? ' agc-green' : ''}`}>
+                <span className="agc-label">{label}</span>
+                <span className="agc-value">{value}</span>
               </div>
             ))}
-            <div className="info-row">
-              <span className="k">Status</span>
-              <span className="v"><span className="live-dot" />Available for work</span>
-            </div>
           </aside>
         </div>
       </div>
