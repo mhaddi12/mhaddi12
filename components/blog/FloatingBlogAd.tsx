@@ -31,6 +31,7 @@ export default function FloatingBlogAd() {
     if (!mounted || !consentAccepted || pushed.current) return;
     pushed.current = true;
     try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
     } catch (e) {
       console.error('[AdSense] FloatingBlogAd push failed:', e);
