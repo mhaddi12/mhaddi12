@@ -1,14 +1,23 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { siteConfig } from '@/lib/data';
+import { useConsent } from '@/hooks/useConsent';
 
 export default function AdSlot() {
+  const consentAccepted = useConsent();
+  const pushed = useRef(false);
+
   useEffect(() => {
+    if (!consentAccepted || pushed.current) return;
+    pushed.current = true;
     try {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-    } catch {}
-  }, []);
+    } catch (e) {
+      console.error('[AdSense] AdSlot push failed:', e);
+    }
+  }, [consentAccepted]);
+
+  if (!consentAccepted) return null;
 
   return (
     <section id="ads">
@@ -19,7 +28,7 @@ export default function AdSlot() {
             className="adsbygoogle"
             style={{ display: 'block', width: '100%', minHeight: '90px' }}
             data-ad-client={siteConfig.adsenseId}
-            data-ad-slot={siteConfig.adsenseSlot}
+            data-ad-slot={siteConfig.adsenseSlotMain}
             data-ad-format="auto"
             data-full-width-responsive="true"
           />

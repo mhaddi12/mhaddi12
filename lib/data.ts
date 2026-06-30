@@ -12,7 +12,12 @@ export const siteConfig = {
   github: 'https://github.com/mhaddi12',
   linkedin: 'https://linkedin.com/in/muhammad-haddi',
   adsenseId: 'ca-pub-8385354422515933',
-  adsenseSlot: '7216674226',
+  // Create separate ad units in AdSense dashboard for each placement.
+  // adsenseSlotFloating and adsenseSlotInline should each be a new ad unit
+  // created at https://adsense.google.com/adsense/new/myads/ad-units
+  adsenseSlotMain:     '7216674226',
+  adsenseSlotFloating: '3967867410',
+  adsenseSlotInline:   '9596020073',
   googleVerification: 'SNMkAng-hilpmkjLOsL3G4heRZXQ0t8Uxra9sd3WndM',
 };
 

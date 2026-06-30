@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
 import 'highlight.js/styles/github-dark.css';
+import InlineBlogAd from '@/components/blog/InlineBlogAd';
 
 function CopyButton({ codeRef }: { codeRef: React.RefObject<HTMLPreElement | null> }) {
   const [copied, setCopied] = useState(false);
@@ -37,14 +38,19 @@ function CodeBlock({ children, ...props }: React.HTMLAttributes<HTMLPreElement>)
 }
 
 export default function BlogContent({ content }: { content: string }) {
+  const paragraphs = content.split(/\n\n+/);
+  const mid = Math.max(1, Math.floor(paragraphs.length / 2));
+  const firstHalf = paragraphs.slice(0, mid).join('\n\n');
+  const secondHalf = paragraphs.slice(mid).join('\n\n');
+
   return (
     <div className="blog-content">
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeHighlight]}
-        components={{ pre: CodeBlock }}
-      >
-        {content}
+      <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]} components={{ pre: CodeBlock }}>
+        {firstHalf}
+      </ReactMarkdown>
+      <InlineBlogAd index={0} />
+      <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]} components={{ pre: CodeBlock }}>
+        {secondHalf}
       </ReactMarkdown>
     </div>
   );
