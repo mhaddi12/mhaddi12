@@ -497,7 +497,7 @@ footer .mono { color: var(--muted); }
   position: fixed;
   bottom: 28px;
   right: 24px;
-  width: 300px;
+  width: 360px;
   background: var(--surface);
   border: 1px solid var(--line-soft);
   border-radius: var(--radius);

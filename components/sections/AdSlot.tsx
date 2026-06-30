@@ -29,7 +29,7 @@ export default function AdSlot() {
             style={{ display: 'block', width: '100%', minHeight: '90px' }}
             data-ad-client={siteConfig.adsenseId}
             data-ad-slot={siteConfig.adsenseSlotMain}
-            data-ad-format="auto"
+            data-ad-format="horizontal"
             data-full-width-responsive="true"
           />
         </div>
