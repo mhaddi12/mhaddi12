@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     'Node.js tutorial', 'Firebase Flutter', 'app development Pakistan',
     'Muhammad Haddi blog',
   ],
+  alternates: {
+    canonical: '/blog',
+  },
   openGraph: {
     title: `Flutter & Mobile App Dev Blog | ${siteConfig.name}`,
     description: 'Flutter tutorials, mobile app architecture, and lessons from shipping production apps.',

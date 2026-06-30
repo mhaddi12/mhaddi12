@@ -5,6 +5,9 @@ import { siteConfig } from '@/lib/data';
 export const metadata: Metadata = {
   title: `Privacy Policy | ${siteConfig.name}`,
   description: 'Privacy policy for Muhammad Haddi portfolio and blog website.',
+  alternates: {
+    canonical: '/privacy-policy',
+  },
 };
 
 const section: React.CSSProperties = { marginBottom: '32px' };

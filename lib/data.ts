@@ -3,7 +3,7 @@ export const siteConfig = {
   title: 'Software Engineer | Muhammad Haddi — Lahore, Pakistan',
   description:
     'Muhammad Haddi is a software engineer based in Lahore, Pakistan. He writes Flutter apps for iOS and Android, Node.js backends, and whatever else it takes to ship a working product.',
-  url: 'https://haddidev.xyz',
+  url: 'https://www.haddidev.xyz',
   image: '/profile.png',
   imageAlt: 'Portrait of Muhammad Haddi, Software Engineer',
   email: 'se.haddi1@gmail.com',
