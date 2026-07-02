@@ -1,87 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 340">
-  <defs>
-    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#071020"/>
-      <stop offset="100%" stop-color="#0a0e1a"/>
-    </linearGradient>
-    <radialGradient id="glow2" cx="80%" cy="15%" r="55%">
-      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.20"/>
-      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="chartbar" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#67E8F9"/>
-      <stop offset="100%" stop-color="#7C3AED"/>
-    </linearGradient>
-  </defs>
+  <rect width="620" height="340" fill="#021810"/>
 
-  <rect width="620" height="340" fill="url(#bg2)"/>
-  <rect width="620" height="340" fill="url(#glow2)"/>
+  <!-- header -->
+  <rect width="620" height="52" fill="#031a10"/>
+  <text x="22" y="33" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#F0FDF4">EasyBooks</text>
+  <rect x="150" y="16" width="58" height="20" rx="10" fill="rgba(251,191,36,0.18)"/>
+  <text x="179" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#fbbf24">★ PRO</text>
+  <rect x="558" y="12" width="48" height="28" rx="8" fill="#059669"/>
+  <text x="582" y="31" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="white">+</text>
 
-  <!-- Status bar -->
-  <rect width="620" height="24" fill="#0a0e1a"/>
-  <text x="16" y="17" font-family="Arial,sans-serif" font-size="11" fill="#94A3B8">9:41</text>
-  <rect x="574" y="7" width="28" height="12" rx="3" fill="none" stroke="#94A3B8" stroke-width="1.4"/>
-  <rect x="602" y="10" width="3" height="6" rx="1" fill="#94A3B8"/>
-  <rect x="576" y="9" width="20" height="8" rx="1.5" fill="#67E8F9"/>
-  <rect x="549" y="15" width="3" height="4" fill="#94A3B8"/>
-  <rect x="554" y="12" width="3" height="7" fill="#94A3B8"/>
-  <rect x="559" y="9" width="3" height="10" fill="#94A3B8"/>
-  <rect x="564" y="7" width="3" height="12" fill="#94A3B8"/>
+  <!-- revenue card -->
+  <rect x="16" y="68" width="290" height="86" rx="12" fill="#052e1a"/>
+  <text x="30" y="92" font-family="Arial,sans-serif" font-size="11" fill="#6ee7b7">Total Revenue</text>
+  <text x="30" y="125" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#F0FDF4">PKR 1,24,500</text>
+  <rect x="30" y="136" width="54" height="16" rx="8" fill="rgba(52,211,153,0.15)"/>
+  <text x="57" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#34d399">↑ 18.4%</text>
 
-  <!-- Header -->
-  <rect y="24" width="620" height="56" fill="#111128"/>
-  <text x="20" y="58" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#F1F5F9">EasyBooks</text>
-  <!-- Premium badge -->
-  <rect x="152" y="40" width="64" height="22" rx="11" fill="rgba(251,191,36,0.18)"/>
-  <text x="184" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#fbbf24">★ PRO</text>
-  <!-- Add button -->
-  <rect x="562" y="34" width="46" height="32" rx="10" fill="#7C3AED"/>
-  <text x="585" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="300" fill="white">+</text>
+  <!-- chart card -->
+  <rect x="318" y="68" width="286" height="86" rx="12" fill="#052e1a"/>
+  <text x="334" y="92" font-family="Arial,sans-serif" font-size="11" fill="#6ee7b7">Monthly</text>
+  <rect x="334" y="110" width="18" height="30" rx="3" fill="#059669" opacity="0.5"/>
+  <rect x="358" y="100" width="18" height="40" rx="3" fill="#059669" opacity="0.7"/>
+  <rect x="382" y="106" width="18" height="34" rx="3" fill="#059669" opacity="0.8"/>
+  <rect x="406" y="92"  width="18" height="48" rx="3" fill="#34d399"/>
+  <rect x="430" y="98"  width="18" height="42" rx="3" fill="#059669" opacity="0.7"/>
+  <rect x="454" y="88"  width="18" height="52" rx="3" fill="#10b981"/>
+  <rect x="478" y="108" width="18" height="32" rx="3" fill="#059669" opacity="0.5"/>
+  <line x1="334" y1="140" x2="508" y2="140" stroke="#6ee7b7" stroke-width="0.5" opacity="0.4"/>
 
-  <!-- Revenue card -->
-  <rect x="12" y="92" width="300" height="90" rx="14" fill="#181838"/>
-  <text x="26" y="116" font-family="Arial,sans-serif" font-size="11" fill="#64748B">Total Revenue (This Month)</text>
-  <text x="26" y="148" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#F1F5F9">PKR 1,24,500</text>
-  <rect x="26" y="163" width="54" height="18" rx="9" fill="rgba(74,222,128,0.15)"/>
-  <text x="53" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#4ade80">↑ 18.4%</text>
+  <!-- invoice header -->
+  <text x="16" y="180" font-family="Arial,sans-serif" font-size="10" letter-spacing="1" fill="#6ee7b7">RECENT INVOICES</text>
 
-  <!-- Mini bar chart -->
-  <rect x="324" y="92" width="284" height="90" rx="14" fill="#181838"/>
-  <text x="338" y="116" font-family="Arial,sans-serif" font-size="11" fill="#64748B">Monthly Overview</text>
-  <rect x="338" y="152" width="20" height="24" rx="3" fill="#7C3AED" opacity="0.6"/>
-  <rect x="366" y="138" width="20" height="38" rx="3" fill="#7C3AED" opacity="0.7"/>
-  <rect x="394" y="145" width="20" height="31" rx="3" fill="#7C3AED" opacity="0.8"/>
-  <rect x="422" y="128" width="20" height="48" rx="3" fill="#67E8F9"/>
-  <rect x="450" y="133" width="20" height="43" rx="3" fill="#7C3AED" opacity="0.7"/>
-  <rect x="478" y="122" width="20" height="54" rx="3" fill="url(#chartbar)"/>
-  <rect x="506" y="144" width="20" height="32" rx="3" fill="#7C3AED" opacity="0.5"/>
-  <text x="338" y="176" font-family="Arial,sans-serif" font-size="9" fill="#64748B">Jul</text>
-  <text x="480" y="176" font-family="Arial,sans-serif" font-size="9" fill="#67E8F9">Dec ↑</text>
+  <!-- invoices -->
+  <rect x="16" y="188" width="588" height="38" rx="9" fill="#052e1a"/>
+  <text x="28" y="211" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#34d399">INV-2024-008</text>
+  <text x="172" y="211" font-family="Arial,sans-serif" font-size="12" fill="#6ee7b7">Ahmed Traders</text>
+  <text x="420" y="211" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#F0FDF4">PKR 32,000</text>
+  <rect x="542" y="198" width="56" height="18" rx="9" fill="rgba(52,211,153,0.14)"/>
+  <text x="570" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#34d399">Paid</text>
 
-  <!-- Invoice list header -->
-  <text x="14" y="208" font-family="Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="#64748B">RECENT INVOICES</text>
+  <rect x="16" y="234" width="588" height="38" rx="9" fill="#052e1a"/>
+  <text x="28" y="257" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#34d399">INV-2024-009</text>
+  <text x="172" y="257" font-family="Arial,sans-serif" font-size="12" fill="#6ee7b7">Sunrise Corp</text>
+  <text x="420" y="257" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#F0FDF4">PKR 58,500</text>
+  <rect x="534" y="244" width="64" height="18" rx="9" fill="rgba(251,191,36,0.14)"/>
+  <text x="566" y="257" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fbbf24">Pending</text>
 
-  <!-- Invoice 1 -->
-  <rect x="12" y="216" width="596" height="36" rx="9" fill="#181838"/>
-  <text x="24" y="237" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#A78BFA">INV-2024-008</text>
-  <text x="150" y="237" font-family="Arial,sans-serif" font-size="12" fill="#64748B">Ahmed Traders</text>
-  <text x="430" y="237" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#F1F5F9">PKR 32,000</text>
-  <rect x="543" y="225" width="58" height="18" rx="9" fill="rgba(74,222,128,0.14)"/>
-  <text x="572" y="238" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#4ade80">Paid</text>
-
-  <!-- Invoice 2 -->
-  <rect x="12" y="260" width="596" height="36" rx="9" fill="#181838"/>
-  <text x="24" y="281" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#A78BFA">INV-2024-009</text>
-  <text x="150" y="281" font-family="Arial,sans-serif" font-size="12" fill="#64748B">Sunrise Corp</text>
-  <text x="430" y="281" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#F1F5F9">PKR 58,500</text>
-  <rect x="536" y="269" width="66" height="18" rx="9" fill="rgba(251,191,36,0.14)"/>
-  <text x="569" y="282" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fbbf24">Pending</text>
-
-  <!-- Invoice 3 -->
-  <rect x="12" y="304" width="596" height="30" rx="9" fill="#181838"/>
-  <text x="24" y="323" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#A78BFA">INV-2024-010</text>
-  <text x="150" y="323" font-family="Arial,sans-serif" font-size="12" fill="#64748B">TechPak Ltd</text>
-  <text x="430" y="323" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#F1F5F9">PKR 14,200</text>
-  <rect x="543" y="312" width="58" height="18" rx="9" fill="rgba(148,163,184,0.1)"/>
-  <text x="572" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#94A3B8">Draft</text>
+  <rect x="16" y="280" width="588" height="38" rx="9" fill="#052e1a"/>
+  <text x="28" y="303" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#34d399">INV-2024-010</text>
+  <text x="172" y="303" font-family="Arial,sans-serif" font-size="12" fill="#6ee7b7">TechPak Ltd</text>
+  <text x="420" y="303" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#F0FDF4">PKR 14,200</text>
+  <rect x="542" y="290" width="56" height="18" rx="9" fill="rgba(110,231,183,0.10)"/>
+  <text x="570" y="303" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#6ee7b7">Draft</text>
 </svg>

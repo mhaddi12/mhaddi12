@@ -1,112 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 340">
-  <defs>
-    <radialGradient id="glow5" cx="80%" cy="5%" r="50%">
-      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow5b" cx="10%" cy="95%" r="45%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="storyring1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ec4899"/>
-      <stop offset="100%" stop-color="#A78BFA"/>
-    </linearGradient>
-    <linearGradient id="storyring2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#ef4444"/>
-    </linearGradient>
-  </defs>
+  <rect width="620" height="340" fill="#160012"/>
 
-  <rect width="620" height="340" fill="#0a0e1a"/>
-  <rect width="620" height="340" fill="url(#glow5)"/>
-  <rect width="620" height="340" fill="url(#glow5b)"/>
+  <!-- header -->
+  <rect width="620" height="52" fill="#1e0018"/>
+  <text x="20" y="33" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#FDF2F8">Socialize</text>
+  <rect x="544" y="13" width="32" height="28" rx="8" fill="rgba(236,72,153,0.12)"/>
+  <text x="560" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#ec4899">💬</text>
+  <rect x="582" y="13" width="32" height="28" rx="8" fill="rgba(236,72,153,0.12)"/>
+  <text x="598" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#ec4899">🔔</text>
 
-  <!-- Status bar -->
-  <rect width="620" height="24" fill="#0a0e1a"/>
-  <text x="16" y="17" font-family="Arial,sans-serif" font-size="11" fill="#94A3B8">9:41</text>
-  <rect x="574" y="7" width="28" height="12" rx="3" fill="none" stroke="#94A3B8" stroke-width="1.4"/>
-  <rect x="602" y="10" width="3" height="6" rx="1" fill="#94A3B8"/>
-  <rect x="576" y="9" width="20" height="8" rx="1.5" fill="#A78BFA"/>
-  <rect x="549" y="15" width="3" height="4" fill="#94A3B8"/>
-  <rect x="554" y="12" width="3" height="7" fill="#94A3B8"/>
-  <rect x="559" y="9" width="3" height="10" fill="#94A3B8"/>
-  <rect x="564" y="7" width="3" height="12" fill="#94A3B8"/>
+  <!-- stories -->
+  <rect y="52" width="620" height="76" fill="#1e0018"/>
+  <!-- add -->
+  <circle cx="42" cy="84" r="26" fill="#280022" stroke="#be185d" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="42" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#ec4899">+</text>
+  <text x="42" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#9d174d">Add</text>
+  <!-- story 1 -->
+  <circle cx="112" cy="84" r="28" fill="#ec4899"/>
+  <circle cx="112" cy="84" r="24" fill="#1e0018"/>
+  <circle cx="112" cy="84" r="20" fill="#9d174d"/>
+  <text x="112" y="89" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="white">AK</text>
+  <text x="112" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#f9a8d4">Ahmad</text>
+  <!-- story 2 -->
+  <circle cx="182" cy="84" r="28" fill="#f43f5e"/>
+  <circle cx="182" cy="84" r="24" fill="#1e0018"/>
+  <circle cx="182" cy="84" r="20" fill="#be123c"/>
+  <text x="182" y="89" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="white">SK</text>
+  <text x="182" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#f9a8d4">Sara</text>
+  <!-- story 3 -->
+  <circle cx="252" cy="84" r="28" fill="#ec4899"/>
+  <circle cx="252" cy="84" r="24" fill="#1e0018"/>
+  <circle cx="252" cy="84" r="20" fill="#9d174d"/>
+  <text x="252" y="89" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="white">RB</text>
+  <text x="252" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#f9a8d4">Raza</text>
+  <!-- story 4 seen -->
+  <circle cx="322" cy="84" r="28" fill="none" stroke="#6d1050" stroke-width="1.5"/>
+  <circle cx="322" cy="84" r="24" fill="#1e0018"/>
+  <circle cx="322" cy="84" r="20" fill="#7c1059"/>
+  <text x="322" y="89" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="white">ZA</text>
+  <text x="322" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#9d174d">Zain</text>
 
-  <!-- App header -->
-  <rect y="24" width="620" height="48" fill="#111128"/>
-  <text x="20" y="54" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#F1F5F9">Socialize</text>
-  <rect x="543" y="33" width="34" height="30" rx="8" fill="rgba(167,139,250,0.1)"/>
-  <text x="560" y="53" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#A78BFA">💬</text>
-  <rect x="583" y="33" width="34" height="30" rx="8" fill="rgba(167,139,250,0.1)"/>
-  <text x="600" y="53" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#A78BFA">🔔</text>
+  <line x1="0" y1="128" x2="620" y2="128" stroke="#280022" stroke-width="1"/>
 
-  <!-- Stories row -->
-  <rect y="72" width="620" height="74" fill="#111128"/>
-  <!-- Story 1 - Add -->
-  <circle cx="40" cy="103" r="26" fill="#181838" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="3,2"/>
-  <text x="40" y="109" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#A78BFA">+</text>
-  <text x="40" y="138" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#64748B">Add</text>
-  <!-- Story 2 -->
-  <circle cx="108" cy="103" r="28" fill="url(#storyring1)"/>
-  <circle cx="108" cy="103" r="24" fill="#181838"/>
-  <circle cx="108" cy="103" r="20" fill="#7C3AED"/>
-  <text x="108" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="white">AK</text>
-  <text x="108" y="138" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94A3B8">Ahmad</text>
-  <!-- Story 3 -->
-  <circle cx="176" cy="103" r="28" fill="url(#storyring2)"/>
-  <circle cx="176" cy="103" r="24" fill="#181838"/>
-  <circle cx="176" cy="103" r="20" fill="#0ea5e9"/>
-  <text x="176" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="white">SK</text>
-  <text x="176" y="138" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94A3B8">Sara</text>
-  <!-- Story 4 -->
-  <circle cx="244" cy="103" r="28" fill="url(#storyring1)"/>
-  <circle cx="244" cy="103" r="24" fill="#181838"/>
-  <circle cx="244" cy="103" r="20" fill="#10b981"/>
-  <text x="244" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="white">RB</text>
-  <text x="244" y="138" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94A3B8">Raza</text>
-  <!-- Story 5 (seen) -->
-  <circle cx="312" cy="103" r="28" fill="none" stroke="#64748B" stroke-width="1.5"/>
-  <circle cx="312" cy="103" r="24" fill="#181838"/>
-  <circle cx="312" cy="103" r="20" fill="#f59e0b"/>
-  <text x="312" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="white">ZA</text>
-  <text x="312" y="138" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#64748B">Zain</text>
-  <!-- Divider -->
-  <line x1="0" y1="145" x2="620" y2="145" stroke="#1e1e40" stroke-width="1"/>
+  <!-- post 1 -->
+  <rect y="129" width="620" height="112" fill="#1e0018"/>
+  <circle cx="30" cy="150" r="17" fill="#9d174d"/>
+  <text x="30" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white">AK</text>
+  <text x="56" y="146" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#FDF2F8">Ahmad Khan</text>
+  <text x="56" y="161" font-family="Arial,sans-serif" font-size="10" fill="#9d174d">2 hours ago · 📍 Lahore</text>
+  <text x="16" y="188" font-family="Arial,sans-serif" font-size="13" fill="#FDF2F8">Just shipped the new chat feature 🚀</text>
+  <text x="16" y="204" font-family="Arial,sans-serif" font-size="13" fill="#FDF2F8">Real-time messaging — buttery smooth.</text>
+  <text x="16" y="228" font-family="Arial,sans-serif" font-size="20" fill="#f43f5e">♥</text>
+  <text x="42" y="228" font-family="Arial,sans-serif" font-size="12" fill="#f9a8d4">284 likes</text>
+  <text x="130" y="228" font-family="Arial,sans-serif" font-size="18" fill="#ec4899">💬</text>
+  <text x="154" y="228" font-family="Arial,sans-serif" font-size="12" fill="#f9a8d4">47 comments</text>
+  <text x="268" y="228" font-family="Arial,sans-serif" font-size="18" fill="#ec4899">↗</text>
+  <text x="292" y="228" font-family="Arial,sans-serif" font-size="12" fill="#f9a8d4">Share</text>
 
-  <!-- Post 1 -->
-  <rect y="146" width="620" height="118" fill="#111128"/>
-  <!-- Post header -->
-  <circle cx="30" cy="166" r="18" fill="#7C3AED"/>
-  <text x="30" y="171" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white">AK</text>
-  <text x="56" y="161" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#F1F5F9">Ahmad Khan</text>
-  <text x="56" y="176" font-family="Arial,sans-serif" font-size="10" fill="#64748B">2 hours ago · 📍 Lahore</text>
-  <text x="598" y="169" text-anchor="end" font-family="Arial,sans-serif" font-size="18" fill="#64748B">⋯</text>
-  <!-- Post content -->
-  <text x="16" y="200" font-family="Arial,sans-serif" font-size="13" fill="#F1F5F9">Just shipped the new chat feature 🚀 Real-time</text>
-  <text x="16" y="218" font-family="Arial,sans-serif" font-size="13" fill="#F1F5F9">messaging with Firebase — feels buttery smooth.</text>
-  <!-- Engagement -->
-  <text x="16" y="248" font-family="Arial,sans-serif" font-size="22" fill="#f87171">♥</text>
-  <text x="42" y="248" font-family="Arial,sans-serif" font-size="12" fill="#94A3B8">284 likes</text>
-  <text x="130" y="248" font-family="Arial,sans-serif" font-size="20" fill="#67E8F9">💬</text>
-  <text x="155" y="248" font-family="Arial,sans-serif" font-size="12" fill="#94A3B8">47 comments</text>
-  <text x="270" y="248" font-family="Arial,sans-serif" font-size="20" fill="#A78BFA">↗</text>
-  <text x="294" y="248" font-family="Arial,sans-serif" font-size="12" fill="#94A3B8">Share</text>
-  <line x1="0" y1="262" x2="620" y2="262" stroke="#1e1e40" stroke-width="1"/>
+  <line x1="0" y1="242" x2="620" y2="242" stroke="#280022" stroke-width="1"/>
 
-  <!-- Post 2 (partial) -->
-  <rect y="264" width="620" height="76" fill="#111128"/>
-  <circle cx="30" cy="284" r="18" fill="#ec4899"/>
-  <text x="30" y="289" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white">FN</text>
-  <text x="56" y="279" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#F1F5F9">Fatima Noor</text>
-  <text x="56" y="294" font-family="Arial,sans-serif" font-size="10" fill="#64748B">5 hours ago</text>
-  <text x="16" y="320" font-family="Arial,sans-serif" font-size="13" fill="#F1F5F9">Building with Flutter × Firebase = ✨ combo. Feeds,</text>
+  <!-- post 2 partial -->
+  <rect y="243" width="620" height="74" fill="#1e0018"/>
+  <circle cx="30" cy="263" r="17" fill="#ec4899"/>
+  <text x="30" y="268" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white">FN</text>
+  <text x="56" y="259" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#FDF2F8">Fatima Noor</text>
+  <text x="56" y="274" font-family="Arial,sans-serif" font-size="10" fill="#9d174d">5 hours ago</text>
+  <text x="16" y="300" font-family="Arial,sans-serif" font-size="13" fill="#FDF2F8">Building with Flutter × Firebase = ✨</text>
 
-  <!-- Bottom nav -->
-  <rect y="316" width="620" height="24" fill="#0a0e1a"/>
-  <text x="55" y="332" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#A78BFA">⌂</text>
-  <text x="175" y="332" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#64748B">🔍</text>
-  <text x="310" y="332" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#64748B">＋</text>
-  <text x="445" y="332" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#64748B">🔔</text>
-  <text x="565" y="332" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#64748B">👤</text>
+  <!-- bottom nav -->
+  <rect y="317" width="620" height="23" fill="#160012"/>
+  <text x="55"  y="333" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#ec4899">⌂</text>
+  <text x="175" y="333" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#6d1050">🔍</text>
+  <text x="310" y="333" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#6d1050">＋</text>
+  <text x="445" y="333" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#6d1050">🔔</text>
+  <text x="565" y="333" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#6d1050">👤</text>
 </svg>
