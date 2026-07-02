@@ -135,6 +135,9 @@ export const projects = [
   {
     num: '01',
     name: 'Optima CRM Mobile',
+    image: '/projects/optima-crm.png',
+    icon: '📋',
+    accent: 'from-violet to-cyan',
     description:
       'A CRM app for field teams on Android and iOS. Riverpod under the hood, with push notifications, in-app chat, document uploads and form-based workflows.',
     tags: ['Flutter', 'Riverpod', 'CRM'],
@@ -142,6 +145,9 @@ export const projects = [
   {
     num: '02',
     name: 'EasyBooks',
+    image: '/projects/easybooks.png',
+    icon: '📒',
+    accent: 'from-cyan to-violet',
     description:
       'A business app where users manage invoices, export PDFs and ZIP files, and unlock premium features through a RevenueCat subscription.',
     tags: ['Flutter', 'RevenueCat', 'PDF'],
@@ -149,6 +155,9 @@ export const projects = [
   {
     num: '03',
     name: 'Email Campaign Platform',
+    image: '/projects/email-platform.png',
+    icon: '✉️',
+    accent: 'from-violet-deep to-violet',
     description:
       'An email platform built on Node.js, MongoDB and AWS SES. Supports custom sending domains, campaign queues and delivery stats — handles bulk sends without falling over.',
     tags: ['Node.js', 'AWS SES', 'MongoDB'],
@@ -156,6 +165,9 @@ export const projects = [
   {
     num: '04',
     name: 'Streaming Platform',
+    image: '/projects/streaming.png',
+    icon: '🎙️',
+    accent: 'from-cyan to-violet-deep',
     description:
       'A livestreaming app using Agora — users can go live, join streams and do voice or video calls. Built to stay smooth even when the network isn\'t great.',
     tags: ['Flutter', 'Agora SDK', 'Realtime'],
@@ -163,6 +175,9 @@ export const projects = [
   {
     num: '05',
     name: 'Social Media Application',
+    image: '/projects/social.png',
+    icon: '💬',
+    accent: 'from-violet to-violet-deep',
     description:
       'A social app with feeds, real-time chat, photo sharing and Firebase auth. One of my first full-feature projects — a lot went wrong and I fixed most of it.',
     tags: ['Flutter', 'Firebase', 'REST API'],
@@ -170,6 +185,9 @@ export const projects = [
   {
     num: '06',
     name: 'Treasure Hunts',
+    image: '/projects/treasure-hunts.png',
+    icon: '🗺️',
+    accent: 'from-violet-deep to-cyan',
     description:
       'A location-based treasure hunt app — clues, maps, and a fun UX. Good excuse to properly learn Google Maps in Flutter.',
     tags: ['Flutter', 'Dart', 'Maps'],
