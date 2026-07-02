@@ -2,7 +2,7 @@ export default function About() {
   const glance = [
     { label: 'Company',    value: 'Omnisoft · Lahore' },
     { label: 'Working on', value: 'Flutter apps and an email platform' },
-    { label: 'Learning',   value: 'System design, SwiftUI' },
+    { label: 'Learning',   value: 'System design' },
     { label: 'Education',  value: 'BS Software Engineering' },
     { label: 'Open to',    value: 'Freelance & full-time roles', green: true },
   ];
