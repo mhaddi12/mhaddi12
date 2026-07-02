@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { useState } from 'react';
 import { projects } from '@/lib/data';
 
@@ -15,12 +14,11 @@ function ProjectCard({ p }: { p: typeof projects[number] }) {
             <span className="proj-thumb-icon">{p.icon}</span>
           </div>
         ) : (
-          <Image
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
             src={p.image!}
             alt={`${p.name} screenshot`}
-            fill
-            sizes="(max-width: 768px) 100vw, 360px"
-            style={{ objectFit: 'cover' }}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             onError={() => setImgError(true)}
           />
         )}

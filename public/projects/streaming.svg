@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 340">
+  <defs>
+    <linearGradient id="videobg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0b1e"/>
+      <stop offset="100%" stop-color="#06080f"/>
+    </linearGradient>
+    <radialGradient id="spotlight" cx="35%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#1a1040" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#06080f" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="faceglow" cx="35%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#2d1b6e" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#06080f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Full-width video background -->
+  <rect width="620" height="340" fill="url(#videobg)"/>
+  <rect width="620" height="340" fill="url(#spotlight)"/>
+  <rect width="620" height="340" fill="url(#faceglow)"/>
+
+  <!-- Presenter silhouette (abstract glow) -->
+  <ellipse cx="220" cy="210" rx="70" ry="85" fill="rgba(80,55,180,0.22)"/>
+  <ellipse cx="220" cy="135" rx="38" ry="40" fill="rgba(100,70,210,0.30)"/>
+
+  <!-- Status bar -->
+  <rect width="620" height="26" fill="rgba(0,0,0,0.55)"/>
+  <text x="16" y="18" font-family="Arial,sans-serif" font-size="11" fill="#F1F5F9">9:41</text>
+  <rect x="574" y="7" width="28" height="12" rx="3" fill="none" stroke="#94A3B8" stroke-width="1.4"/>
+  <rect x="602" y="10" width="3" height="6" rx="1" fill="#94A3B8"/>
+  <rect x="576" y="9" width="16" height="8" rx="1.5" fill="#f87171"/>
+  <rect x="545" y="15" width="3" height="4" fill="#94A3B8"/>
+  <rect x="550" y="12" width="3" height="7" fill="#94A3B8"/>
+  <rect x="555" y="9" width="3" height="10" fill="#94A3B8"/>
+  <rect x="560" y="7" width="3" height="12" fill="#94A3B8"/>
+
+  <!-- LIVE badge -->
+  <rect x="14" y="36" width="62" height="24" rx="6" fill="#ef4444"/>
+  <circle cx="27" cy="48" r="4" fill="white" opacity="0.9"/>
+  <text x="39" y="53" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white">LIVE</text>
+
+  <!-- Timer -->
+  <rect x="84" y="36" width="82" height="24" rx="6" fill="rgba(0,0,0,0.50)"/>
+  <text x="125" y="52" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#F1F5F9">00:42:15</text>
+
+  <!-- Viewer count -->
+  <rect x="14" y="68" width="122" height="24" rx="6" fill="rgba(0,0,0,0.50)"/>
+  <text x="28" y="84" font-family="Arial,sans-serif" font-size="12" fill="#F1F5F9">👁 1.2K watching</text>
+
+  <!-- Quality badge -->
+  <rect x="548" y="36" width="60" height="22" rx="6" fill="rgba(0,0,0,0.50)"/>
+  <text x="578" y="51" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#4ade80">HD 720p</text>
+
+  <!-- Streamer name chip -->
+  <rect x="14" y="100" width="130" height="26" rx="13" fill="rgba(0,0,0,0.55)"/>
+  <circle cx="30" cy="113" r="9" fill="#7C3AED"/>
+  <text x="30" y="117" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="white">MH</text>
+  <text x="46" y="117" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#F1F5F9">haddidev</text>
+
+  <!-- Chat overlay — floating on right side of video -->
+  <rect x="350" y="80" width="258" height="30" rx="8" fill="rgba(0,0,0,0.52)"/>
+  <circle cx="366" cy="95" r="9" fill="#7C3AED"/>
+  <text x="366" y="99" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="white">AM</text>
+  <text x="382" y="91" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#A78BFA">Ahmad M.</text>
+  <text x="382" y="105" font-family="Arial,sans-serif" font-size="10" fill="#E2E8F0">🔥 Amazing stream bro!</text>
+
+  <rect x="350" y="118" width="258" height="30" rx="8" fill="rgba(0,0,0,0.52)"/>
+  <circle cx="366" cy="133" r="9" fill="#0ea5e9"/>
+  <text x="366" y="137" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="white">SK</text>
+  <text x="382" y="129" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#67E8F9">Sara K.</text>
+  <text x="382" y="143" font-family="Arial,sans-serif" font-size="10" fill="#E2E8F0">How is the latency?</text>
+
+  <rect x="350" y="156" width="258" height="30" rx="8" fill="rgba(0,0,0,0.52)"/>
+  <circle cx="366" cy="171" r="9" fill="#10b981"/>
+  <text x="366" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="white">RB</text>
+  <text x="382" y="167" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#4ade80">Raza B.</text>
+  <text x="382" y="181" font-family="Arial,sans-serif" font-size="10" fill="#E2E8F0">Sub 100ms with Agora 👌</text>
+
+  <rect x="350" y="194" width="258" height="30" rx="8" fill="rgba(0,0,0,0.52)"/>
+  <circle cx="366" cy="209" r="9" fill="#f59e0b"/>
+  <text x="366" y="213" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="white">ZA</text>
+  <text x="382" y="205" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#fbbf24">Zain A.</text>
+  <text x="382" y="219" font-family="Arial,sans-serif" font-size="10" fill="#E2E8F0">❤️ ❤️ ❤️</text>
+
+  <rect x="350" y="232" width="258" height="30" rx="8" fill="rgba(0,0,0,0.52)"/>
+  <circle cx="366" cy="247" r="9" fill="#ec4899"/>
+  <text x="366" y="251" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="white">FN</text>
+  <text x="382" y="243" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#f472b6">Fatima N.</text>
+  <text x="382" y="257" font-family="Arial,sans-serif" font-size="10" fill="#E2E8F0">Voice call feature next?</text>
+
+  <!-- Chat input bar -->
+  <rect x="350" y="270" width="258" height="32" rx="16" fill="rgba(0,0,0,0.55)"/>
+  <text x="372" y="290" font-family="Arial,sans-serif" font-size="11" fill="#64748B">Send a message…</text>
+  <text x="592" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#A78BFA">➤</text>
+
+  <!-- Bottom controls bar -->
+  <rect x="0" y="296" width="620" height="44" fill="rgba(0,0,0,0.70)"/>
+  <circle cx="60" cy="318" r="16" fill="rgba(255,255,255,0.10)"/>
+  <text x="60" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#F1F5F9">🎙</text>
+  <circle cx="116" cy="318" r="16" fill="rgba(255,255,255,0.10)"/>
+  <text x="116" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#F1F5F9">📷</text>
+  <circle cx="172" cy="318" r="16" fill="rgba(255,255,255,0.10)"/>
+  <text x="172" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#F1F5F9">🔗</text>
+  <circle cx="228" cy="318" r="16" fill="rgba(255,255,255,0.10)"/>
+  <text x="228" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#F1F5F9">✨</text>
+  <!-- End stream -->
+  <circle cx="310" cy="316" r="20" fill="#ef4444"/>
+  <text x="310" y="323" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="white">✕</text>
+</svg>

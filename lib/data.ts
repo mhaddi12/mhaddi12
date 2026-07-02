@@ -135,7 +135,7 @@ export const projects = [
   {
     num: '01',
     name: 'Optima CRM Mobile',
-    image: '/projects/optima-crm.png',
+    image: '/projects/optima-crm.svg',
     icon: '📋',
     accent: 'from-violet to-cyan',
     description:
@@ -145,7 +145,7 @@ export const projects = [
   {
     num: '02',
     name: 'EasyBooks',
-    image: '/projects/easybooks.png',
+    image: '/projects/easybooks.svg',
     icon: '📒',
     accent: 'from-cyan to-violet',
     description:
@@ -155,7 +155,7 @@ export const projects = [
   {
     num: '03',
     name: 'Email Campaign Platform',
-    image: '/projects/email-platform.png',
+    image: '/projects/email-platform.svg',
     icon: '✉️',
     accent: 'from-violet-deep to-violet',
     description:
@@ -165,7 +165,7 @@ export const projects = [
   {
     num: '04',
     name: 'Streaming Platform',
-    image: '/projects/streaming.png',
+    image: '/projects/streaming.svg',
     icon: '🎙️',
     accent: 'from-cyan to-violet-deep',
     description:
@@ -175,7 +175,7 @@ export const projects = [
   {
     num: '05',
     name: 'Social Media Application',
-    image: '/projects/social.png',
+    image: '/projects/social.svg',
     icon: '💬',
     accent: 'from-violet to-violet-deep',
     description:
@@ -185,7 +185,7 @@ export const projects = [
   {
     num: '06',
     name: 'Treasure Hunts',
-    image: '/projects/treasure-hunts.png',
+    image: '/projects/treasure-hunts.svg',
     icon: '🗺️',
     accent: 'from-violet-deep to-cyan',
     description:
