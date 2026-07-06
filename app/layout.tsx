@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600'], variabl
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-mono' });
 
 export const viewport: Viewport = {
-  themeColor: '#0A0E1A',
+  themeColor: '#0A0A0C',
 };
 
 export const metadata: Metadata = {

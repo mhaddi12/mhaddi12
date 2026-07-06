@@ -42,8 +42,8 @@ export default function Hero() {
               <p className="pc-role">Software Engineer</p>
               <span className="pc-badge">Available for work</span>
               <div className="pc-meta">
-                <span>📍 Lahore, PK</span>
-                <span>💼 3+ Years</span>
+                <span>Lahore, PK</span>
+                <span>3+ Years</span>
               </div>
               <div className="pc-links">
                 <a href={siteConfig.github} target="_blank" rel="noopener noreferrer" className="pc-link">GitHub</a>

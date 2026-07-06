@@ -12,15 +12,15 @@ export default function Contact() {
             let&apos;s make it ship.
           </p>
           <div className="contact-links">
-            <a className="clink" href={`mailto:${siteConfig.email}`}>✉ {siteConfig.email}</a>
+            <a className="clink" href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
             <a className="clink" href={`tel:${siteConfig.phone.replace(/-/g, '')}`}>
-              📞 {siteConfig.phone}
+              {siteConfig.phone}
             </a>
             <a className="clink" href={siteConfig.linkedin} target="_blank" rel="noopener noreferrer">
-              in LinkedIn
+              LinkedIn
             </a>
             <a className="clink" href={siteConfig.github} target="_blank" rel="noopener noreferrer">
-              ◐ GitHub
+              GitHub
             </a>
           </div>
         </div>
