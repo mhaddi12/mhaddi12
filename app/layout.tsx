@@ -53,6 +53,11 @@ export const metadata: Metadata = {
     // — Comparison / alternative searches
     'Flutter vs React Native Developer', 'React Native Alternative',
     'Cross-Platform Alternative to Native App',
+
+    // — AI direction (honest, in-progress positioning)
+    'Flutter Developer Learning AI', 'AI Engineer in Training',
+    'Flutter to AI Engineer', 'AI API Integration Developer',
+    'OpenAI API Integration', 'AI Agent Developer',
   ],
   authors: [{ name: 'Muhammad Haddi' }],
   robots: { index: true, follow: true, 'max-image-preview': 'large' },
@@ -93,6 +98,7 @@ const jsonLd = {
     'Clean Architecture', 'iOS Development', 'Android Development',
     'Cross-Platform Development', 'Flutter Freelancing', 'App Store Deployment',
     'Play Store Deployment', 'GetX', 'BLoC', 'Provider', 'Flutter Web',
+    'AI Engineering', 'Large Language Models', 'OpenAI API', 'AI Agents',
   ],
   alumniOf: { '@type': 'CollegeOrUniversity', name: 'Superior University, Lahore' },
 };

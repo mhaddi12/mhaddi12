@@ -27,6 +27,20 @@ function ProjectCard({ p }: { p: typeof projects[number] }) {
         <div className="proj-num">{p.num}</div>
         <h3>{p.name}</h3>
         <p>{p.description}</p>
+        <div className="proj-case">
+          <div className="proj-case-row">
+            <span className="proj-case-label">Challenge</span>
+            <span className="proj-case-value">{p.challenge}</span>
+          </div>
+          <div className="proj-case-row">
+            <span className="proj-case-label">Solution</span>
+            <span className="proj-case-value">{p.solution}</span>
+          </div>
+          <div className="proj-case-row">
+            <span className="proj-case-label">Impact</span>
+            <span className="proj-case-value">{p.impact}</span>
+          </div>
+        </div>
         <div className="proj-tags">
           {p.tags.map((t) => <span key={t} className="tag">{t}</span>)}
         </div>

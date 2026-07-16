@@ -24,9 +24,10 @@ export default function Header() {
 
         <nav className={`nav-links${menuOpen ? ' open' : ''}`} id="navLinks">
           <Link href="/#about" onClick={closeMenu}>About</Link>
-          <Link href="/#skills" onClick={closeMenu}>Skills</Link>
-          <Link href="/#experience" onClick={closeMenu}>Experience</Link>
           <Link href="/#projects" onClick={closeMenu}>Projects</Link>
+          <Link href="/#learning" onClick={closeMenu}>Learning</Link>
+          <Link href="/#services" onClick={closeMenu}>Services</Link>
+          <Link href="/#skills" onClick={closeMenu}>Tech Stack</Link>
           <Link href="/blog" onClick={closeMenu}>Blog</Link>
           <Link href="/#contact" className="nav-cta" onClick={closeMenu}>Get in touch</Link>
         </nav>

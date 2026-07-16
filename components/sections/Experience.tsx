@@ -6,8 +6,8 @@ export default function Experience() {
       <div className="wrap">
         <div className="sec-head reveal">
           <span className="eyebrow">Release history</span>
-          <h2>Where I&apos;ve shipped</h2>
-          <p>Five companies, three years — here&apos;s what I built at each one.</p>
+          <h2>Where I&apos;ve shipped — and where I&apos;m headed</h2>
+          <p>Five companies, three years of shipping Flutter apps — and the AI engineering chapter I&apos;m writing now.</p>
         </div>
         <div className="timeline">
           {experience.map((e) => (

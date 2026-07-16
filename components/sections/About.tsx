@@ -2,7 +2,7 @@ export default function About() {
   const glance = [
     { label: 'Company',    value: 'Omnisoft · Lahore' },
     { label: 'Working on', value: 'Flutter apps and an email platform' },
-    { label: 'Learning',   value: 'System design' },
+    { label: 'Learning',   value: 'AI Engineering — LLMs, Agents, Backend' },
     { label: 'Education',  value: 'BS Software Engineering' },
     { label: 'Open to',    value: 'Freelance & full-time roles', green: true },
   ];
@@ -32,7 +32,9 @@ export default function About() {
             </p>
             <p className="about-intro">
               I care about code that&apos;s easy to read six months later. I&apos;m not precious about
-              tech choices — I use what fits. And I&apos;m <b>open to new work</b>, remote or on-site.
+              tech choices — I use what fits. Lately that means learning <b>AI engineering</b> —
+              LLMs, agents, and the backend work that goes with them — so I&apos;m not just building
+              apps, I&apos;m building toward smarter ones. And I&apos;m <b>open to new work</b>, remote or on-site.
             </p>
             <ul className="strength-list">
               {strengths.map((s) => (

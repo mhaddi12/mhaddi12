@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="wrap">
-        <div>Muhammad Haddi — Flutter &amp; Full-Stack Mobile Developer</div>
+        <div>Muhammad Haddi — Flutter Developer, growing into AI Engineering</div>
         <div className="mono" style={{ marginTop: '6px' }}>
           Built with Flutter-grade attention to detail · Lahore, PK
         </div>

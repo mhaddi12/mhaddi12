@@ -6,10 +6,10 @@ export default function Contact() {
       <div className="wrap">
         <div className="contact-section reveal">
           <span className="eyebrow" style={{ justifyContent: 'center' }}>Let&apos;s talk</span>
-          <h2 style={{ marginTop: '16px' }}>Have a project in mind?</h2>
+          <h2 style={{ marginTop: '16px' }}>Let&apos;s build smart software together.</h2>
           <p>
-            I&apos;m available for freelance and full-time roles. Tell me what you&apos;re building and
-            let&apos;s make it ship.
+            Whether you need a production-ready mobile application today or someone passionate about
+            building AI-powered software tomorrow, I&apos;d love to collaborate.
           </p>
           <div className="contact-links">
             <a className="clink" href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
