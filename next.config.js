@@ -18,6 +18,7 @@ const nextConfig = {
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
           // Opt out of FLoC / Privacy Sandbox cohort tracking
           { key: 'Permissions-Policy', value: 'interest-cohort=()' },
+          { key: 'Strict-Transport-Security', value: 'max-age=63072000' },
         ],
       },
     ];

@@ -8,6 +8,7 @@ import FloatingBlogAd from '@/components/blog/FloatingBlogAd';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { siteConfig } from '@/lib/data';
+import { jsonLdScript, personId } from '@/lib/seo';
 
 export const dynamic = 'force-dynamic';
 
@@ -19,21 +20,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   await connectDB();
   const post = await Post.findOne({ slug, published: true }).lean();
-  if (!post) return {};
+  if (!post) return { title: 'Not found', robots: { index: false, follow: false } };
+
+  const published = post.publishedAt.toISOString();
 
   return {
-    title: `${post.title} | ${siteConfig.name}`,
+    title: post.title,
     description: post.excerpt,
+    authors: [{ name: siteConfig.name, url: siteConfig.url }],
     alternates: {
       canonical: `/blog/${slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `${siteConfig.url}/blog/${slug}`,
+      url: `/blog/${slug}`,
       type: 'article',
-      publishedTime: post.publishedAt.toISOString(),
+      publishedTime: published,
+      modifiedTime: published,
       tags: post.tags,
+      ...(post.coverImage ? { images: [{ url: post.coverImage }] } : {}),
     },
   };
 }
@@ -45,23 +51,61 @@ export default async function BlogPostPage({ params }: Props) {
   const post = await Post.findOneAndUpdate(
     { slug, published: true },
     { $inc: { views: 1 } },
-    { returnDocument: 'after' },
+    { returnDocument: 'after', timestamps: false },
   ).lean();
 
   if (!post) notFound();
 
+  const published = new Date(post.publishedAt).toISOString();
   const date = new Date(post.publishedAt).toLocaleDateString('en-US', {
     year: 'numeric', month: 'long', day: 'numeric',
   });
+  const pageUrl = `${siteConfig.url}/blog/${slug}`;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.excerpt,
+        datePublished: published,
+        dateModified: published,
+        author: { '@type': 'Person', name: siteConfig.name, url: siteConfig.url },
+        publisher: { '@id': personId },
+        mainEntityOfPage: pageUrl,
+        url: pageUrl,
+        inLanguage: 'en',
+        ...(post.coverImage ? { image: [post.coverImage] } : {}),
+        keywords: post.tags.join(', '),
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.url },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteConfig.url}/blog` },
+          { '@type': 'ListItem', position: 3, name: post.title, item: pageUrl },
+        ],
+      },
+    ],
+  };
 
   return (
     <>
       <Header />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdScript(jsonLd) }}
+      />
       <main style={{ paddingTop: '100px' }}>
         <article className="wrap blog-post">
 
-          {/* Back link */}
-          <Link href="/blog" className="blog-back">← Back to Blog</Link>
+          <nav className="blog-back" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            {' / '}
+            <Link href="/blog">Blog</Link>
+            {' / '}
+            <span>{post.title}</span>
+          </nav>
 
           {/* Header */}
           <header className="blog-post-header">
@@ -70,6 +114,7 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
             <h1>{post.title}</h1>
             <div className="blog-post-meta">
+              <Link href="/">{siteConfig.name}</Link>
               <span className="mono">{date}</span>
               <span className="mono">{post.views} views</span>
             </div>
@@ -85,7 +130,7 @@ export default async function BlogPostPage({ params }: Props) {
           {/* Footer */}
           <div className="blog-post-footer">
             <Link href="/blog" className="btn btn-ghost" style={{ display: 'inline-flex' }}>← More Articles</Link>
-            <Link href="#contact" className="btn btn-primary" style={{ display: 'inline-flex' }}>Hire Me →</Link>
+            <Link href="/#contact" className="btn btn-primary" style={{ display: 'inline-flex' }}>Hire Me →</Link>
           </div>
         </article>
       </main>

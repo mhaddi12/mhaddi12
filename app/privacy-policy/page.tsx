@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { siteConfig } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: `Privacy Policy | ${siteConfig.name}`,
+  title: 'Privacy Policy',
   description: 'Privacy policy for Muhammad Haddi portfolio and blog website.',
   alternates: {
     canonical: '/privacy-policy',

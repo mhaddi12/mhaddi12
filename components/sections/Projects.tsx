@@ -18,6 +18,8 @@ function ProjectCard({ p }: { p: typeof projects[number] }) {
           <img
             src={p.image!}
             alt={`${p.name} screenshot`}
+            loading="lazy"
+            decoding="async"
             style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             onError={() => setImgError(true)}
           />

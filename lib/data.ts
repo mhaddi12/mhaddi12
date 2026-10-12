@@ -1,16 +1,18 @@
 export const siteConfig = {
   name: 'Muhammad Haddi',
-  title: 'Software Engineer | Muhammad Haddi — Lahore, Pakistan',
+  title: 'Flutter Developer in Lahore | Muhammad Haddi',
   description:
-    'Muhammad Haddi is a software engineer based in Lahore, Pakistan. He builds production Flutter apps and Node.js backends, and is currently expanding into AI engineering — LLMs, AI agents, and intelligent backend systems.',
+    'Flutter developer in Lahore shipping production iOS, Android, and Node.js apps, now building AI integrations. Open to freelance and full-time work.',
   url: 'https://haddidev.xyz',
+  updated: '2026-10-12',
+  privacyUpdated: '2026-06-26',
   image: '/profile.png',
   imageAlt: 'Portrait of Muhammad Haddi, Software Engineer',
   email: 'se.haddi1@gmail.com',
   phone: '+92-343-4034159',
   location: 'Lahore, Pakistan',
   github: 'https://github.com/mhaddi12',
-  linkedin: 'https://linkedin.com/in/muhammad-haddi',
+  linkedin: 'https://www.linkedin.com/in/muhammad-haddi',
   adsenseId: 'ca-pub-8385354422515933',
   // Create separate ad units in AdSense dashboard for each placement.
   // adsenseSlotFloating and adsenseSlotInline should each be a new ad unit

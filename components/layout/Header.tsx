@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className={`nav${scrolled ? ' scrolled' : ''}`} id="nav">
       <div className="wrap nav-inner">
-        <Link href="#top" className="brand">
+        <Link href="/#top" className="brand">
           <span className="dot">MH</span>
           Muhammad Haddi
         </Link>

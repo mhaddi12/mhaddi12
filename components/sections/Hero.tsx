@@ -36,10 +36,12 @@ export default function Hero() {
             <div className="hero-portrait-frame">
               <Image
                 src={siteConfig.image}
-                alt="Muhammad Haddi"
+                alt={siteConfig.imageAlt}
                 width={340}
                 height={425}
                 priority
+                fetchPriority="high"
+                sizes="(max-width: 860px) 70vw, 340px"
               />
               <div className="hero-portrait-caption">
                 <span className="hero-portrait-name">Muhammad Haddi</span>
