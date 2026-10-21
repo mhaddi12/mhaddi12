@@ -9,8 +9,7 @@ export default function Hero() {
         <div>
           <span className="eyebrow">Flutter · Node.js · Learning AI Engineering</span>
           <h1>
-            Building modern <span className="grad">mobile apps</span> today.
-            Learning and building <span className="grad">AI solutions</span> for tomorrow.
+            I build <span className="grad">mobile experiences</span> people love to use.
           </h1>
           <p className="lead">
             I have <b>3+ years</b> of experience building production-ready mobile applications with{' '}
@@ -18,8 +17,8 @@ export default function Hero() {
             development, and scalable SaaS architecture to create smarter software solutions.
           </p>
           <div className="hero-cta">
-            <Link href="#projects" className="btn btn-primary">View My Work</Link>
-            <Link href="#contact" className="btn btn-ghost">Let&apos;s Build Together</Link>
+            <Link href="#projects" className="btn btn-primary">Explore Projects</Link>
+            <Link href="#contact" className="btn btn-ghost">Get in Touch</Link>
           </div>
           <div className="hero-stats">
             {heroStats.map((s) => (
