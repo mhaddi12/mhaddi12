@@ -645,3 +645,69 @@ footer .mono { color: var(--muted); }
   transition: background .2s, transform .15s;
 }
 .cookie-banner__accept:hover { background: var(--accent-deep); transform: translateY(-1px); }
+
+/* Portfolio design refresh */
+:root {
+  --ink:#080b13; --ink-2:#0d1220; --surface:#111827; --surface-2:#192236;
+  --line:rgba(190,210,255,.16); --line-soft:rgba(190,210,255,.095);
+  --text:#f6f8ff; --muted:#b0bcd2; --muted-2:#8695af;
+  --accent:#818cf8; --accent-deep:#6366f1; --accent-soft:rgba(129,140,248,.16);
+  --radius:20px; --maxw:1200px;
+}
+body::before { background:radial-gradient(ellipse at 80% 6%,rgba(99,102,241,.2),transparent 58%),radial-gradient(ellipse at 0% 35%,rgba(14,116,144,.12),transparent 55%); }
+body::after { opacity:.1; }
+::selection { color:#fff; background:#4f46e5; }
+header.nav { background:rgba(8,11,19,.78); border-bottom-color:var(--line-soft); }
+header.nav.scrolled { background:rgba(8,11,19,.95); border-bottom-color:var(--line); }
+.brand .dot { border-radius:12px; background:linear-gradient(135deg,#a5b4fc,#6366f1); box-shadow:0 8px 24px rgba(99,102,241,.24); }
+.nav-links a.nav-cta { background:var(--accent); color:#080b13; border-color:transparent; }
+.nav-links a.nav-cta:hover { background:#a5b4fc; color:#080b13; }
+.hero { padding:170px 0 110px; }
+.hero-grid { grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr); gap:clamp(32px,6vw,90px); }
+.hero .eyebrow { color:#c7d2fe; letter-spacing:.08em; text-transform:none; }
+.hero h1 { font-size:clamp(2.75rem,5.3vw,5.1rem); line-height:1.09; letter-spacing:-.06em; }
+.hero h1 .grad { color:#a5b4fc; }
+.hero .lead { font-size:1.12rem; line-height:1.8; max-width:630px; }
+.btn { min-height:50px; border-radius:12px; }
+.btn-primary { background:#818cf8; color:#090e1b; box-shadow:0 12px 32px rgba(99,102,241,.22); }
+.btn-primary:hover { background:#a5b4fc; }
+.hero-stats { border-top:1px solid var(--line); padding-top:28px; margin-top:44px; }
+.hero-portrait { max-width:380px; }
+.hero-portrait-frame { border-radius:24px; border-color:var(--line); box-shadow:0 35px 85px rgba(0,0,0,.55); }
+section { padding:108px 0; }
+.sec-head { max-width:730px; }
+.sec-head h2 { font-size:clamp(2rem,3.8vw,3.15rem); letter-spacing:-.045em; }
+.at-glance-card,.skill-card,.journey-card,.build-card,.service-card,.post-card { background:linear-gradient(145deg,#192236,#111827); border-color:var(--line); }
+.skill-card:hover,.journey-card:hover,.build-card:hover,.service-card:hover { border-color:rgba(165,180,252,.45); }
+.proj-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.proj-card { border-radius:22px; border-color:var(--line); background:linear-gradient(145deg,#192236,#101725); }
+.proj-card:hover { border-color:rgba(165,180,252,.45); }
+.proj-thumb { height:230px; border-radius:22px 22px 0 0; background:#161f31; }
+.proj-body { padding:28px 30px 32px; }
+.proj-card h3 { font-size:1.45rem; letter-spacing:-.035em; }
+.proj-num,.proj-case-label { color:#a5b4fc; }
+.proj-case { border-top:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft); padding:16px 0; }
+.tag { background:rgba(129,140,248,.08); border-color:rgba(129,140,248,.16); color:#cbd5eb; }
+.contact-section { background:radial-gradient(ellipse at 50% 0%,rgba(99,102,241,.17),transparent 75%),#111827; border-color:var(--line); border-radius:28px; }
+@media(max-width:900px) {
+ .hero-grid { grid-template-columns:1fr; }
+ .hero { padding:135px 0 72px; }
+ .device-stage { order:0; justify-content:flex-start; }
+ .hero-portrait { width:min(80%,360px); }
+ .proj-grid { grid-template-columns:1fr; }
+}
+@media(max-width:560px) {
+ .wrap { padding:0 20px; }
+ .hero h1 { font-size:clamp(2.4rem,10vw,3.3rem); }
+ .hero .lead { font-size:1rem; }
+ .hero-cta { flex-direction:column; }
+ .hero-cta .btn { justify-content:center; }
+ .hero-stats { justify-content:space-between; gap:14px; }
+ .hero-stats .stat .n { font-size:1.6rem; }
+ .hero-portrait { width:100%; max-width:330px; }
+ .proj-thumb { height:175px; }
+ .proj-body { padding:22px; }
+ .proj-case-row { flex-direction:column; gap:3px; }
+ .proj-case-label { width:auto; }
+ .contact-section { padding:55px 20px; }
+}
