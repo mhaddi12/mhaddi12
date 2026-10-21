@@ -22,7 +22,7 @@ export default function Header() {
           Muhammad Haddi
         </Link>
 
-        <nav className={`nav-links${menuOpen ? ' open' : ''}`} id="navLinks">
+        <nav className={`nav-links${menuOpen ? ' open' : ''}`} id="navLinks" aria-label="Main navigation">
           <Link href="/#about" onClick={closeMenu}>About</Link>
           <Link href="/#projects" onClick={closeMenu}>Projects</Link>
           <Link href="/#learning" onClick={closeMenu}>Learning</Link>
@@ -34,8 +34,9 @@ export default function Header() {
 
         <button
           className={`burger${menuOpen ? ' x' : ''}`}
-          aria-label="Toggle menu"
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={menuOpen}
+          aria-controls="navLinks"
           onClick={() => setMenuOpen((o) => !o)}
         >
           <span /><span /><span />
