@@ -1,13 +1,14 @@
 import type { Metadata, Viewport } from 'next';
-import { Plus_Jakarta_Sans, Inter, JetBrains_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import { siteConfig } from '@/lib/data';
 import { isProductionIndexable, jsonLdScript, personId, websiteId } from '@/lib/seo';
 import CookieConsent from '@/components/CookieConsent';
 
-const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-space' });
-const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600'], variable: '--font-inter' });
-const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-mono' });
+// Keep builds independent of Google Fonts responses and network availability.
+const plusJakartaSans = localFont({ src: './fonts/plus-jakarta-sans-latin.woff2', weight: '400 800', display: 'swap', variable: '--font-space' });
+const inter = localFont({ src: './fonts/inter-latin.woff2', weight: '400 600', display: 'swap', variable: '--font-inter' });
+const jetbrainsMono = localFont({ src: './fonts/jetbrains-mono-latin.woff2', weight: '400 500', display: 'swap', variable: '--font-mono' });
 
 export const viewport: Viewport = {
   width: 'device-width',
