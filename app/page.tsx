@@ -1,47 +1,37 @@
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
-import RevealProvider from '@/components/providers/RevealProvider';
-import { siteConfig, skills } from '@/lib/data';
-import { jsonLdScript, personId, websiteId } from '@/lib/seo';
-import Hero from '@/components/sections/Hero';
-import About from '@/components/sections/About';
-import Projects from '@/components/sections/Projects';
-import LearningJourney from '@/components/sections/LearningJourney';
-import Building from '@/components/sections/Building';
-import Services from '@/components/sections/Services';
-import TechStack from '@/components/sections/TechStack';
-import Experience from '@/components/sections/Experience';
-import AdSlot from '@/components/sections/AdSlot';
-import Contact from '@/components/sections/Contact';
+import Header from "@/components/layout/Header";
+import PortfolioExperience from "@/components/PortfolioExperience";
+import RevealProvider from "@/components/providers/RevealProvider";
+import { siteConfig, skills } from "@/lib/data";
+import { jsonLdScript, personId, websiteId } from "@/lib/seo";
 
 export default function Home() {
   const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        '@type': 'Person',
-        '@id': personId,
+        "@type": "Person",
+        "@id": personId,
         name: siteConfig.name,
-        jobTitle: 'Software Engineer',
+        jobTitle: "Software Engineer",
         url: siteConfig.url,
         email: siteConfig.email,
         telephone: siteConfig.phone,
         image: `${siteConfig.url}${siteConfig.image}`,
         address: {
-          '@type': 'PostalAddress',
-          addressLocality: 'Lahore',
-          addressCountry: 'PK',
+          "@type": "PostalAddress",
+          addressLocality: "Lahore",
+          addressCountry: "PK",
         },
         sameAs: [siteConfig.linkedin, siteConfig.github],
         knowsAbout: [...new Set(skills.flatMap((skill) => skill.tags))],
       },
       {
-        '@type': 'ProfilePage',
-        '@id': `${siteConfig.url}/#profile`,
+        "@type": "ProfilePage",
+        "@id": `${siteConfig.url}/#profile`,
         url: siteConfig.url,
         name: siteConfig.title,
-        mainEntity: { '@id': personId },
-        isPartOf: { '@id': websiteId },
+        mainEntity: { "@id": personId },
+        isPartOf: { "@id": websiteId },
       },
     ],
   };
@@ -54,18 +44,8 @@ export default function Home() {
       />
       <Header />
       <main>
-        <Hero />
-        <About />
-        <Projects />
-        <LearningJourney />
-        <Building />
-        <Services />
-        <TechStack />
-        <Experience />
-        <AdSlot />
-        <Contact />
+        <PortfolioExperience />
       </main>
-      <Footer />
     </RevealProvider>
   );
 }
