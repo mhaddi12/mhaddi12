@@ -177,7 +177,7 @@ export default function PortfolioExperience() {
             <div className="px-availability">
               <span /> Available for your next big idea
             </div>
-            <p className="px-kicker">MUHAMMAD HADDI / SOFTWARE ENGINEER</p>
+            <p className="px-kicker">MUHAMMAD HADDI / FOUNDER & CEO OF HADDIDEV</p>
             <h1>
               I build apps.
               <br />
@@ -186,8 +186,7 @@ export default function PortfolioExperience() {
               <span className="px-gradient">the difference.</span>
             </h1>
             <p className="px-intro">
-              From the first tap to the last detail. I craft Flutter experiences
-              that feel right — and I’m exploring what AI can bring to them.
+              I’m the founder and CEO of HaddiDev, an independent software development brand. I build thoughtful Flutter apps, Node.js backends, and practical digital products.
             </p>
             <div className="px-actions">
               <a className="px-button" href="#projects">
@@ -212,7 +211,7 @@ export default function PortfolioExperience() {
                 />
               </div>
               <p>
-                3+ years building. 10+ apps shipped.
+                Founder & CEO, HaddiDev · 10+ apps shipped.
                 <br />
                 <span>Lahore, Pakistan · Working everywhere.</span>
               </p>
@@ -382,7 +381,7 @@ export default function PortfolioExperience() {
           <span>THE TOOLS BEHIND THE CRAFT</span>
           <p>
             Flutter <b>✳</b> Dart <b>✳</b> Riverpod <b>✳</b> Node.js <b>✳</b>{" "}
-            Firebase <b>✳</b> MongoDB
+            PostgreSQL <b>✳</b> Firebase
           </p>
         </div>
       </div>
