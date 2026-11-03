@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: 'Muhammad Haddi',
-  title: 'Flutter Developer in Lahore | Muhammad Haddi',
+  title: 'Muhammad Haddi | Founder & CEO of HaddiDev',
   description:
-    'Flutter developer in Lahore shipping production iOS, Android, and Node.js apps, now building AI integrations. Open to freelance and full-time work.',
+    'Muhammad Haddi is the founder and CEO of HaddiDev, an independent software development brand in Lahore, Pakistan, building Flutter apps, Node.js APIs, and digital products.',
   url: 'https://haddidev.xyz',
   updated: '2026-10-12',
   privacyUpdated: '2026-06-26',
