@@ -1920,3 +1920,119 @@ header.px-nav.scrolled {
     font-size: 12px;
   }
 }
+
+
+/* Shared portfolio spacing system: aligned gutters, consistent section/card rhythm.
+   Keep phone mockups and decorative art on their own internal spacing. */
+.px-experience {
+  --px-gutter: clamp(20px, 4vw, 54px);
+  --px-section-space: clamp(64px, 7vw, 104px);
+  --px-card-space: clamp(20px, 2.4vw, 30px);
+  --px-grid-gap: clamp(16px, 2.2vw, 28px);
+}
+.px-experience .px-wrap,
+.px-nav .wrap {
+  width: 100%;
+  max-width: 1320px;
+  padding-inline: var(--px-gutter, clamp(20px, 4vw, 54px));
+  margin-inline: auto;
+}
+.px-experience .px-wrap,
+.px-experience .px-hero-copy,
+.px-experience .px-scene-wrap,
+.px-experience .px-about-grid > *,
+.px-experience .px-now-grid > *,
+.px-experience .px-projects > *,
+.px-experience .px-services > * {
+  min-width: 0;
+}
+.px-experience .px-section {
+  padding-block: var(--px-section-space);
+}
+.px-experience .px-about-grid,
+.px-experience .px-now-grid {
+  padding-block: var(--px-section-space);
+  gap: clamp(28px, 5vw, 70px);
+}
+.px-experience .px-section-head {
+  gap: var(--px-grid-gap);
+  margin-bottom: clamp(26px, 3vw, 38px);
+}
+.px-experience .px-projects {
+  gap: clamp(24px, 3vw, 40px) var(--px-grid-gap);
+}
+.px-experience .px-services {
+  gap: var(--px-grid-gap);
+}
+.px-experience .px-service {
+  padding: var(--px-card-space);
+}
+.px-experience .px-project-info {
+  padding-inline: clamp(2px, 0.5vw, 8px);
+}
+.px-experience .px-stack-strip > .px-wrap {
+  padding-block: clamp(20px, 2.5vw, 27px);
+}
+.px-experience .px-footer {
+  padding-top: clamp(48px, 5vw, 70px);
+}
+.px-experience .px-footer-heading,
+.px-experience .px-footer-contact > a,
+.px-experience .px-about-copy,
+.px-experience .px-section-head {
+  overflow-wrap: anywhere;
+}
+.px-experience .px-terminal-body {
+  overflow-x: auto;
+}
+@media (max-width: 760px) {
+  .px-experience {
+    --px-gutter: clamp(20px, 4.5vw, 32px);
+    --px-section-space: clamp(52px, 8vw, 70px);
+    --px-card-space: 22px;
+  }
+  .px-experience .px-projects {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+  .px-experience .px-about-grid,
+  .px-experience .px-now-grid {
+    gap: 36px;
+  }
+  .px-experience .px-section-head {
+    margin-bottom: 26px;
+  }
+  .px-experience .px-hero-grid {
+    gap: 24px;
+  }
+}
+@media (max-width: 440px) {
+  .px-experience {
+    --px-gutter: 20px;
+    --px-section-space: 48px;
+    --px-card-space: 20px;
+  }
+  .px-experience .px-hero-grid {
+    padding-top: 112px;
+  }
+  .px-experience .px-actions {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .px-experience .px-service {
+    padding: var(--px-card-space);
+  }
+  .px-experience .px-footer-heading {
+    font-size: clamp(40px, 12vw, 53px);
+    letter-spacing: -2px;
+    padding-right: 42px;
+  }
+  .px-experience .px-footer-heading > b {
+    font-size: 54px;
+    right: 0;
+  }
+  .px-experience .px-about-facts {
+    gap: 12px;
+    justify-content: space-between;
+  }
+}
