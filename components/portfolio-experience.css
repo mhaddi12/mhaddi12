@@ -2252,3 +2252,30 @@ header.px-nav.scrolled {
     transform: none !important;
   }
 }
+
+/* Final transform precedence and extra-small touch viewport safeguards. */
+@media (hover: hover) and (pointer: fine) and (min-width: 761px) {
+  .px-experience.px-enhanced .px-terminal.is-visible {
+    transform: perspective(1000px) rotateY(calc(-5deg + var(--card-ry))) rotateX(calc(3deg + var(--card-rx)));
+  }
+}
+@media (max-width: 380px) {
+  .px-experience .px-hero h1 {
+    font-size: clamp(36px, 11.8vw, 43px);
+    letter-spacing: -1.8px;
+    overflow-wrap: anywhere;
+  }
+  .px-experience .px-hero-copy > .px-availability {
+    max-width: 100%;
+    letter-spacing: 0;
+  }
+  .px-experience .px-scene-wrap {
+    max-width: 100%;
+  }
+  .px-experience .px-phone-float {
+    left: 20%;
+  }
+  .px-experience .px-footer-contact > a {
+    overflow-wrap: anywhere;
+  }
+}
