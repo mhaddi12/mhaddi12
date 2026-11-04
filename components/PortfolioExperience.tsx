@@ -11,6 +11,7 @@ import {
 } from "react";
 import { experience, projects, siteConfig } from "@/lib/data";
 import "./portfolio-experience.css";
+import InteractiveOrbit3D from "./InteractiveOrbit3D";
 
 type Project = (typeof projects)[number];
 type MotionStyle = CSSProperties & {
@@ -19,94 +20,6 @@ type MotionStyle = CSSProperties & {
   "--mx"?: string;
   "--my"?: string;
 };
-
-function Orbit({ paused }: { paused: boolean }) {
-  const canvas = useRef<HTMLCanvasElement>(null);
-  useEffect(() => {
-    const element = canvas.current;
-    const ctx = element?.getContext("2d");
-    if (!element || !ctx) return;
-    const media = matchMedia("(prefers-reduced-motion: reduce)");
-    let frame = 0,
-      angle = 0,
-      visible = true,
-      width = 0,
-      height = 0;
-    const resize = new ResizeObserver(([entry]) => {
-      width = entry.contentRect.width;
-      height = entry.contentRect.height;
-      const ratio = Math.min(devicePixelRatio || 1, 2);
-      element.width = width * ratio;
-      element.height = height * ratio;
-      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
-      paint();
-    });
-    const paint = () => {
-      ctx.clearRect(0, 0, width, height);
-      const radius = Math.min(width, height) * 0.4;
-      const points: { x: number; y: number; z: number }[] = [];
-      for (let ring = 0; ring < 11; ring++) {
-        const latitude = (Math.PI * (ring + 1)) / 12;
-        for (let i = 0; i < 40; i++) {
-          const longitude = (i * Math.PI * 2) / 40 + angle;
-          const x = Math.sin(latitude) * Math.cos(longitude);
-          const y = Math.cos(latitude);
-          const z = Math.sin(latitude) * Math.sin(longitude);
-          const yy = y * 0.88 - z * 0.48;
-          const zz = y * 0.48 + z * 0.88;
-          const scale = 2.5 / (2.5 + zz);
-          points.push({
-            x: width / 2 + x * radius * scale,
-            y: height / 2 + yy * radius * scale,
-            z: zz,
-          });
-        }
-      }
-      points.forEach((p, i) => {
-        ctx.fillStyle = `rgba(158,132,255,${0.12 + (1 - p.z) * 0.2})`;
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, 1.1 + (1 - p.z) * 0.45, 0, Math.PI * 2);
-        ctx.fill();
-        if (i % 40 !== 39) {
-          const n = points[i + 1];
-          ctx.strokeStyle = `rgba(155,128,245,${0.035 + (1 - p.z) * 0.045})`;
-          ctx.beginPath();
-          ctx.moveTo(p.x, p.y);
-          ctx.lineTo(n.x, n.y);
-          ctx.stroke();
-        }
-      });
-    };
-    const tick = () => {
-      angle += 0.002;
-      paint();
-      frame = requestAnimationFrame(tick);
-    };
-    const sync = () => {
-      cancelAnimationFrame(frame);
-      if (!paused && !media.matches && visible && !document.hidden)
-        frame = requestAnimationFrame(tick);
-      else paint();
-    };
-    const observer = new IntersectionObserver(([entry]) => {
-      visible = entry.isIntersecting;
-      sync();
-    });
-    resize.observe(element);
-    observer.observe(element);
-    media.addEventListener("change", sync);
-    document.addEventListener("visibilitychange", sync);
-    sync();
-    return () => {
-      cancelAnimationFrame(frame);
-      resize.disconnect();
-      observer.disconnect();
-      media.removeEventListener("change", sync);
-      document.removeEventListener("visibilitychange", sync);
-    };
-  }, [paused]);
-  return <canvas className="px-orbit" ref={canvas} aria-hidden="true" />;
-}
 
 function tilt(event: PointerEvent<HTMLElement>) {
   if (
@@ -224,7 +137,7 @@ export default function PortfolioExperience() {
               onPointerLeave={resetTilt}
               style={{ "--rx": "0deg", "--ry": "0deg" } as MotionStyle}
             >
-              <Orbit paused={paused} />
+              <InteractiveOrbit3D paused={paused} />
               <div className="px-scene-light" />
               <div className="px-ring px-ring-one" />
               <div className="px-ring px-ring-two" />
