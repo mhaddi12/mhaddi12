@@ -68,6 +68,66 @@ export default function PortfolioExperience() {
     root.current?.classList.add("px-enhanced");
     return () => observer.disconnect();
   }, []);
+  // Shared pointer-driven depth for interactive cards; touch remains scroll-first.
+  useEffect(() => {
+    const container = root.current;
+    if (!container) return;
+    const selector = ".px-service, .px-job summary, .px-photo-frame, .px-terminal";
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+    let active: HTMLElement | null = null;
+    let frame = 0;
+    let x = 0;
+    let y = 0;
+    const reset = (element: HTMLElement | null) => {
+      if (!element) return;
+      element.style.removeProperty("--card-rx");
+      element.style.removeProperty("--card-ry");
+      element.style.removeProperty("--card-mx");
+      element.style.removeProperty("--card-my");
+    };
+    const move = (event: globalThis.PointerEvent) => {
+      if (!finePointer.matches || motion.matches || paused) {
+        reset(active);
+        active = null;
+        return;
+      }
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+      const element = target.closest<HTMLElement>(selector);
+      if (element !== active) {
+        reset(active);
+        active = element;
+      }
+      if (!element) return;
+      const bounds = element.getBoundingClientRect();
+      if (!bounds.width || !bounds.height) return;
+      x = Math.max(0, Math.min(1, (event.clientX - bounds.left) / bounds.width));
+      y = Math.max(0, Math.min(1, (event.clientY - bounds.top) / bounds.height));
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        if (!active) return;
+        active.style.setProperty("--card-rx", `${((0.5 - y) * 7).toFixed(2)}deg`);
+        active.style.setProperty("--card-ry", `${((x - 0.5) * 9).toFixed(2)}deg`);
+        active.style.setProperty("--card-mx", `${(x * 100).toFixed(1)}%`);
+        active.style.setProperty("--card-my", `${(y * 100).toFixed(1)}%`);
+      });
+    };
+    const leave = () => {
+      reset(active);
+      active = null;
+    };
+    container.addEventListener("pointermove", move, { passive: true });
+    container.addEventListener("pointerleave", leave);
+    return () => {
+      cancelAnimationFrame(frame);
+      container.removeEventListener("pointermove", move);
+      container.removeEventListener("pointerleave", leave);
+      reset(active);
+    };
+  }, [paused]);
+
   const filtered = projects.filter(
     (p) =>
       filter === "All" ||
