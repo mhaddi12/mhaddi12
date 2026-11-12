@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy policy for Muhammad Haddi portfolio and blog website.',
+  description: 'Learn how Muhammad Haddi's portfolio handles anonymous blog views, advertising consent, cookies, and third-party services.',
   alternates: {
     canonical: '/privacy-policy',
   },
