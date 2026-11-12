@@ -23,16 +23,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return { title: 'Not found', robots: { index: false, follow: false } };
 
   const published = post.publishedAt.toISOString();
+  const seoTitles: Record<string, string> = {
+    'flutter-clean-architecture': 'Scalable Flutter Apps with Clean Architecture',
+    'what-is-an-llm-explained-with-examples': 'What Is an LLM? Simple Explanation and Examples',
+  };
+  const seoTitle = seoTitles[slug] ?? post.title;
 
   return {
-    title: post.title,
+    title: { absolute: seoTitle },
     description: post.excerpt,
     authors: [{ name: siteConfig.name, url: siteConfig.url }],
     alternates: {
       canonical: `/blog/${slug}`,
     },
     openGraph: {
-      title: post.title,
+      title: seoTitle,
       description: post.excerpt,
       url: `/blog/${slug}`,
       type: 'article',
